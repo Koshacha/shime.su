@@ -3,12 +3,17 @@ import { field, group } from "@nuxt/content/preview";
 export default defineNuxtSchema({
   appConfig: {
     parent: group({
-      title: "Основные настройки",
-      icon: "uil:setting",
+      title: "UI",
+      description: "UI configuration",
+      icon: "i-ph-palette-fill",
       fields: {
-        ogImage: field({
-          type: "file",
-          title: "og:image",
+        primary: field({
+          type: "string",
+          title: "Primary",
+          description: "Primary color of your UI.",
+          icon: "i-ph-palette",
+          default: "sky",
+          required: ["sky", "mint", "rose", "amber"],
         }),
       },
     }),
