@@ -39,19 +39,18 @@ export default defineNuxtSchema({
           icon: "i-ph-envelope",
         }),
         elsewhere: field({
-          type: "object",
-          title: "Elsewhere",
-          icon: "i-ph-link-simple",
-          fields: {
-            title: field({
-              type: "string",
-              title: "Title",
-            }),
-            link: field({
-              type: "string",
-              title: "Link",
-            }),
-          },
+          type: "array",
+          title: "Tags",
+          description: "Tags for the directory.",
+          default: [
+            { name: "SAAS", color: "blue" },
+            { name: "dashboard", color: "green" },
+            { name: "landing-page" },
+            { name: "toolbox" },
+            { name: "agency" },
+            { name: "markdown-based" },
+            { name: "basics", color: "indigo" },
+          ],
         }),
       },
     }),
