@@ -1,5 +1,5 @@
 export default defineAppConfig({
   portfolio: {
-    primary: "rose",
+    primary: "mint",
   },
 });
