@@ -20,7 +20,7 @@ useSeoMeta({
 });
 
 onMounted(() => {
-  console.log(appConfig);
+  console.log(appConfig.portfolio);
 });
 </script>
 
