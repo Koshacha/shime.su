@@ -1,7 +1,5 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <!-- <TheHeader /> -->
-
     <main class="flex-grow">
       <transition name="page" mode="out-in">
         <div>

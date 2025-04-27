@@ -6,6 +6,6 @@
       {{ $t("projects.title") }}
     </h1>
 
-    <project-list />
+    <lazy-project-list hydrate-never />
   </div>
 </template>

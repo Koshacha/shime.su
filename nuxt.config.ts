@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   modules: [
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
@@ -21,12 +22,11 @@ export default defineNuxtConfig({
         {
           src: "https://eu.umami.is/script.js",
           defer: true,
-          dataWebsiteId: "4361b3b2-95c6-40ca-820d-71bdb05af291",
+          "data-website-id": "4361b3b2-95c6-40ca-820d-71bdb05af291",
         },
       ],
     },
   },
-
   i18n: {
     locales: [
       {
@@ -41,7 +41,6 @@ export default defineNuxtConfig({
     defaultLocale: "ru",
     vueI18n: "./i18n.config.ts",
   },
-
   tailwindcss: {
     config: {
       content: [

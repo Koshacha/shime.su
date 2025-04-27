@@ -25,10 +25,15 @@ defineEmits<{
           ? 'text-text-primary'
           : 'text-text-secondary hover:text-text-primary'
       "
+      prefetch-on="interaction"
     >
       {{ $t(`nav.${route.path === "/" ? "home" : route.path.slice(1)}`) }}
       <motion.div
-        v-if="$route.path === route.path || $route.path === `/en${route.path}` || `${$route.path}/` === `/en${route.path}`"
+        v-if="
+          $route.path === route.path ||
+          $route.path === `/en${route.path}` ||
+          `${$route.path}/` === `/en${route.path}`
+        "
         class="absolute inset-0 bg-accent/20 rounded-full"
         layout-id="background-card"
         id="background-card"

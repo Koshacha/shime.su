@@ -1,17 +1,5 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
-// import { gsap } from 'gsap';
-
-onMounted(() => {
-  // Animation for section elements
-  // gsap.from('.section', {
-  //   opacity: 0,
-  //   y: 20,
-  //   stagger: 0.2,
-  //   duration: 0.7,
-  //   ease: 'power2.out'
-  // });
-});
 </script>
 
 <template>
