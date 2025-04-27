@@ -39,7 +39,7 @@ export default defineNuxtSchema({
           icon: "i-ph-envelope",
         }),
         elsewhere: field({
-          type: "array",
+          type: "object",
           title: "Elsewhere",
           icon: "i-ph-link-simple",
           fields: {
@@ -50,34 +50,6 @@ export default defineNuxtSchema({
             link: field({
               type: "string",
               title: "Link",
-            }),
-          },
-        }),
-      },
-    }),
-    jobs: group({
-      title: "Working Background",
-      icon: "i-ph-briefcase",
-      fields: {
-        list: field({
-          type: "array",
-          title: "Jobs List",
-          fields: {
-            period: field({
-              type: "string",
-              title: "Period",
-            }),
-            company: field({
-              type: "string",
-              title: "Company",
-            }),
-            position: field({
-              type: "string",
-              title: "Position",
-            }),
-            description: field({
-              type: "string",
-              title: "Description",
             }),
           },
         }),
