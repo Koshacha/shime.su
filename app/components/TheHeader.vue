@@ -3,6 +3,7 @@ import { ref, onMounted, onUnmounted } from "vue";
 import { motion } from "motion-v";
 import { onClickOutside } from "@vueuse/core";
 import { useTemplateRef } from "vue";
+import ResumeButton from "./ResumeButton.vue";
 
 const isScrolled = ref(false);
 const isMobileMenuOpen = ref(false);
@@ -65,9 +66,7 @@ onClickOutside(target, () => (isMobileMenuOpen.value = false));
         <!-- Language Dropdown -->
         <language-swither />
 
-        <the-button class="max-md:hidden" href="/resume.pdf">{{
-          $t("nav.resume")
-        }}</the-button>
+        <resume-button />
 
         <!-- Mobile menu button -->
         <the-button

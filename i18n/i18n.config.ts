@@ -3,6 +3,7 @@ export default defineI18nConfig(() => ({
   locale: "ru",
   messages: {
     en: {
+      resume: "/cv-ilya-mazunin-vue.pdf",
       nav: {
         home: "Home",
         anken: "Projects",
@@ -37,6 +38,7 @@ export default defineI18nConfig(() => ({
       },
     },
     ru: {
+      resume: "/cv-ilya-mazunin-vue-ru.pdf",
       nav: {
         home: "Главная",
         anken: "Проекты",

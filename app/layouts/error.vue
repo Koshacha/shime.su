@@ -9,7 +9,5 @@
         </div>
       </div>
     </main>
-
-    <the-footer />
   </div>
 </template>
