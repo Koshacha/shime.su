@@ -2,7 +2,7 @@ import { field, group } from "@nuxt/content/preview";
 
 export default defineNuxtSchema({
   appConfig: {
-    parent: group({
+    portfolio: group({
       title: "UI",
       description: "UI configuration",
       icon: "i-ph-palette-fill",
