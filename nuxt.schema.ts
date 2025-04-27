@@ -2,18 +2,84 @@ import { field, group } from "@nuxt/content/preview";
 
 export default defineNuxtSchema({
   appConfig: {
-    portfolio: group({
-      title: "UI",
-      description: "UI configuration",
-      icon: "i-ph-palette-fill",
+    app: group({
+      title: "App",
+      icon: "i-ph-app-window-fill",
       fields: {
-        primary: field({
+        updateDate: field({
           type: "string",
-          title: "Primary",
-          description: "Primary color of your UI.",
-          icon: "i-ph-palette",
-          default: "sky",
-          required: ["sky", "mint", "rose", "amber"],
+          title: "Update Date",
+          description: "Дата обновления в формате ДД.М.ГГГГ",
+        }),
+      },
+    }),
+    portfolio: group({
+      title: "Portfolio",
+      icon: "i-ph-paperclip",
+      fields: {
+        ruResumeFile: field({
+          type: "file",
+          title: "CV File RU",
+          description: "Резюме на русском",
+        }),
+        enResumeFile: field({
+          type: "file",
+          title: "CV File EN",
+          description: "Резюме на английском",
+        }),
+      },
+    }),
+    contacts: group({
+      title: "Contacts",
+      icon: "i-ph-paper-plane",
+      fields: {
+        email: field({
+          type: "string",
+          title: "Email",
+          icon: "i-ph-envelope",
+        }),
+        elsewhere: field({
+          type: "array",
+          title: "Elsewhere",
+          icon: "i-ph-link-simple",
+          fields: {
+            title: field({
+              type: "string",
+              title: "Title",
+            }),
+            link: field({
+              type: "string",
+              title: "Link",
+            }),
+          },
+        }),
+      },
+    }),
+    jobs: group({
+      title: "Working Background",
+      icon: "i-ph-briefcase",
+      fields: {
+        list: field({
+          type: "array",
+          title: "Jobs List",
+          fields: {
+            period: field({
+              type: "string",
+              title: "Period",
+            }),
+            company: field({
+              type: "string",
+              title: "Company",
+            }),
+            position: field({
+              type: "string",
+              title: "Position",
+            }),
+            description: field({
+              type: "string",
+              title: "Description",
+            }),
+          },
         }),
       },
     }),

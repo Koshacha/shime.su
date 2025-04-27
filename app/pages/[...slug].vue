@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const route = useRoute();
-const appConfig = useAppConfig();
 
 const { data: page } = await useAsyncData("page-" + route.path, () => {
   return queryCollection("content").path(route.path).first();
@@ -17,10 +16,6 @@ if (!page.value) {
 useSeoMeta({
   title: page.value.seo.title ?? page.value.title,
   description: page.value.seo.description ?? page.value.description,
-});
-
-onMounted(() => {
-  console.log(appConfig.portfolio);
 });
 </script>
 
