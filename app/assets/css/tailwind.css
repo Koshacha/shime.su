@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1a1a1a;
+  --secondary: #2c2c2c;
+  --accent: #d1d1d1;
+  --text-primary: #f0f0f0;
+  --text-secondary: #a0a0a0;
+}
+
+:root.light-theme {
+  --primary: #f0f0f0;
+  --secondary: #e0e0e0;
+  --accent: #444444;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4f4f4f;
+}
+
+html {
+  font-family: Inter, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--text-primary);
+  background-color: var(--primary);
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+.content {
+  > div {
+    @apply space-y-16;
+  }
+
+  h1 {
+    @apply text-3xl font-semibold mb-12 text-text-primary;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold mb-6 text-text-primary;
+  }
+
+  p {
+    @apply text-text-secondary text-lg leading-relaxed;
+  }
+}
