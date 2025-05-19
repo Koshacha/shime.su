@@ -1,10 +1,9 @@
 ---
 title: CRUD телефонной базы
 description: React.js SPA CRUD, для базы данных телефонов MySQL.
-seoDescription:
-  React.js SPA, с помощью которого можно исследовать телефонную базу данных MySQL.
-  базу данных телефонных номеров MySQL, вносить в нее правки - например, отмечать номера как просмотренные и т.д.
-  далее.
+seoDescription: React.js SPA, с помощью которого можно исследовать телефонную
+  базу данных MySQL. базу данных телефонных номеров MySQL, вносить в нее правки
+  - например, отмечать номера как просмотренные и т.д. далее.
 year: 2020
 sort: 1
 tags:
@@ -13,7 +12,8 @@ layout: project
 published: true
 icon: doodles:flower
 color: "#9A4574"
-link: "https://github.com/koshacha/database-reader"
+link: https://github.com/koshacha/database-reader
+image: /daniel-romero-73t-f-tw-or-k-pg-unsplash.jpg
 ---
 
 ## Введение
