@@ -11,6 +11,7 @@ color: "#5077FF"
 icon: doodles:sphere
 layout: project
 link: "https://deswop.com"
+image: /bobots.jpg
 ---
 
 ## Introduction

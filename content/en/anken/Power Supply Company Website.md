@@ -11,6 +11,7 @@ color: "#41BB85"
 tags:
   - CMS
 link: "https://www.noviten.ru/"
+image: /dynamic-wang-aiv7-jj-jb0-unsplash.jpg
 ---
 
 ## Links

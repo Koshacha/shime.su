@@ -12,6 +12,7 @@ color: "#9A4574"
 tags:
   - React.js
 link: "https://github.com/koshacha/database-reader"
+image: /daniel-romero-73t-f-tw-or-k-pg-unsplash.jpg
 ---
 
 ## Introduction
