@@ -1,6 +1,7 @@
 ---
 title: Бот Discord
-description: Бот для приватного Discord-сервера, посвященного общению и ролевой игре. Написан на Nest.js.
+description: Бот для приватного Discord-сервера, посвященного общению и ролевой
+  игре. Написан на Nest.js.
 seoDescription: Проект Discord-бота на Node.js, Nest.js, Google Firebase и Docker.
 tags:
   - Backend
@@ -10,7 +11,8 @@ published: true
 color: "#F7BFBE"
 icon: doodles:star
 layout: project
-link: "https://discord.com/oauth2/authorize?client_id=1121418492097343589&permissions=275012176976&scope=bot"
+link: https://discord.com/oauth2/authorize?client_id=1121418492097343589&permissions=275012176976&scope=bot
+image: public/discord-app.jpg
 ---
 
 ## Введение
