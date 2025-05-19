@@ -1,0 +1,1 @@
+import{A as s,d as o,e as a,h as t,t as n,Q as r}from"./CujC71zc.js";const c={class:""},i={class:"text-3xl font-semibold mb-12 text-text-primary"},l={class:"space-y-16"},_=s({__name:"WorkPage",setup(d){return(e,m)=>(a(),o("div",c,[t("h1",i,n(e.$t("work.title")),1),t("div",l,[r(e.$slots,"default")])]))}}),f=Object.assign(_,{__name:"WorkPage"});export{f as default};
