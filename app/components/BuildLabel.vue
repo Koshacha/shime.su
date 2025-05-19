@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { useDateFormat, useNow } from "@vueuse/core";
-
-const buildDate = useDateFormat(useNow(), "D.M.YYYY");
+const config = useAppConfig();
 </script>
 
 <template>
-  <p>{{ $t("footer.updated") }}: {{ buildDate }}</p>
+  <p>{{ $t("footer.updated") }}: {{ config?.app.updateDate }}</p>
 </template>

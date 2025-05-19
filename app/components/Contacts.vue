@@ -11,10 +11,10 @@
         <div>
           <div class="text-text-secondary mb-1 text-sm">Email</div>
           <a
-            href="mailto:qbub@proton.me"
+            :href="`mailto:${config.contacts.email}`"
             class="text-text-primary hover:text-accent transition-colors"
           >
-            qbub@proton.me
+            {{ config.contacts.email }}
           </a>
         </div>
         <div>
@@ -39,6 +39,8 @@
 import { motion } from "motion-v";
 import { useTimeoutPoll } from "@vueuse/core";
 
+const config = useAppConfig();
+
 const visible = ref(false);
 
 async function hideElement() {
@@ -49,26 +51,4 @@ async function hideElement() {
 const { pause, resume } = useTimeoutPoll(hideElement, 500, {
   immediate: false,
 });
-
-const contacts: {
-  name: string;
-  href: string;
-}[] = [
-  {
-    name: "Telegram",
-    href: "https://t.me/Koshacha",
-  },
-  {
-    name: "GitHub",
-    href: "https://github.com/Koshacha",
-  },
-  {
-    name: "Upwork",
-    href: "https://www.upwork.com/freelancers/~01355186bd65b2bf29",
-  },
-  {
-    name: "LinkenIn",
-    href: "https://www.linkedin.com/in/koshacha",
-  },
-];
 </script>
