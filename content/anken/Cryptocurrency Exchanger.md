@@ -1,18 +1,20 @@
 ---
 title: Обменник криптовалюты
-description: Приложение для покупки и обмена криптовалюты, созданное с помощью React.js и Socket.IO.
+description: Приложение для покупки и обмена криптовалюты, созданное с помощью
+  React.js и Socket.IO.
 year: 2023
 sort: 5
 tags:
   - React.js
 published: true
-seoDescription:
-  Проект криптовалютного обменника с использованием React.js, React
-  Router, TypeScript, Socket.IO и Docker для эффективных обменных операций.
+seoDescription: Проект криптовалютного обменника с использованием React.js,
+  React Router, TypeScript, Socket.IO и Docker для эффективных обменных
+  операций.
 color: "#5077FF"
 icon: doodles:sphere
 layout: project
-link: "https://deswop.com"
+link: https://deswop.com
+image: /bobots.jpg
 ---
 
 ## Введение
@@ -37,20 +39,19 @@ link: "https://deswop.com"
 
 Входящие сообщения:
 
-- _ticker_ - содержит либо данные о курсе валют, либо данные о текущем ордере
-- _order_ - содержит данные о созданном, запрошенном ордере.
+- *ticker* - содержит либо данные о курсе валют, либо данные о текущем ордере
+- *order* - содержит данные о созданном, запрошенном ордере.
 
 А вот исходящие сообщения. Они сложнее, так как со стороны бэкенда все эти сообщения были получены с одним идентификатором «order».
 
-- _currencies_ - запрос данных о валюте.
-- _order_data_ - запрос данных о заказе.
-- _change_ - создать запрос на обмен валюты.
-- _rate_ - оценить работу сервиса, был ли выполнен заказ (или нет).
+- *currencies* - запрос данных о валюте.
+- *order\_data* - запрос данных о заказе.
+- *change* - создать запрос на обмен валюты.
+- *rate* - оценить работу сервиса, был ли выполнен заказ (или нет).
 
 Я написал следующий код, который полностью покрыл мои потребности в данной типизации и работает просто идеально.
 
 ::prose-code
-
 ```ts
 interface ServerToClientEvents {
   ticker: (
@@ -66,5 +67,4 @@ export interface ClientSocket extends Socket<ServerToClientEvents> {
   emit(event: "order", type: "rate", dto: OrderRateDto): this;
 }
 ```
-
 ::

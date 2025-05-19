@@ -1,9 +1,9 @@
 ---
 title: Сайт для поиска работы
 description: Сайт доски объявлений о поиске работы с использованием Next.js.
-seoDescription:
-  Проект доски объявлений о поиске работы с использованием Next.js, PHP и Rest API.
-  Изучение GetResponse, SendGrid и GoHighLevel для расширения функций цифровой рассылки
+seoDescription: Проект доски объявлений о поиске работы с использованием
+  Next.js, PHP и Rest API. Изучение GetResponse, SendGrid и GoHighLevel для
+  расширения функций цифровой рассылки
 year: 2022
 sort: 4
 published: true
@@ -13,7 +13,8 @@ tags:
 layout: project
 icon: doodles:star-2
 color: "#8A46FF"
-link: "https://jobsandneeds.com"
+link: https://jobsandneeds.com
+image: /cookie-the-pom-si-nd-di9-rp-vy-unsplash.jpg
 ---
 
 ## Введение

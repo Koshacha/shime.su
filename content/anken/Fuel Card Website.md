@@ -1,8 +1,10 @@
 ---
 title: Сайт провайдера топливных карт
-description: Корпоративный сайт для компании по продаже топливных карт, созданный с использованием Bootstrap и CMS Wordpress.
-seoDescription: Корпоративный сайт для компании по продаже топливных карт, созданный с использованием
-  Bootstrap и CMS Wordpress в Портфолио Ильи Мазунина.
+description: Корпоративный сайт для компании по продаже топливных карт,
+  созданный с использованием Bootstrap и CMS Wordpress.
+seoDescription: Корпоративный сайт для компании по продаже топливных карт,
+  созданный с использованием Bootstrap и CMS Wordpress в Портфолио Ильи
+  Мазунина.
 year: 2020
 sort: 1
 published: true
@@ -11,7 +13,8 @@ tags:
 color: black
 icon: doodles:round
 layout: project
-link: "https://tver-karta.ru/"
+link: https://tver-karta.ru/
+image: /erik-mclean-w85w-c-felnmw-unsplash.jpg
 ---
 
 ## Ссылки

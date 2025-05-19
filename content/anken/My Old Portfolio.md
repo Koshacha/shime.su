@@ -1,7 +1,9 @@
 ---
 title: Сайт-портфолио
 description: Сайт на Svelte с использованием SSG и TypeScript.
-seoDescription: «Сайт на Svelte с использованием SSG и TypeScript, чтобы показать миру мое портфолио и накопленный опыт в качестве фронтенд-разработчика».
+seoDescription: «Сайт на Svelte с использованием SSG и TypeScript, чтобы
+  показать миру мое портфолио и накопленный опыт в качестве
+  фронтенд-разработчика».
 year: 2023
 sort: 3
 layout: project
@@ -10,7 +12,7 @@ tags:
 published: true
 icon: doodles:naruto
 color: "#5E9167"
-# link: "https://leerob.io/"
+image: /joshua-aragon-b-mnhuw-f-yr7w-unsplash.jpg
 ---
 
 ## Введение

@@ -1,9 +1,9 @@
 ---
 title: Маркетплейс
 description: Платформа для маркетплейсов на основе Next.js
-seoDescription:
-  Платформа для маркетплейса, использующая Next.js, RTK Query, WebSocket,
-  Google Firebase Authentication и Docker для обеспечения бесперебойной работы пользователей.
+seoDescription: Платформа для маркетплейса, использующая Next.js, RTK Query,
+  WebSocket, Google Firebase Authentication и Docker для обеспечения
+  бесперебойной работы пользователей.
 year: 2023
 sort: 5
 layout: project
@@ -12,7 +12,8 @@ tags:
 published: true
 icon: doodles:cross
 color: "#FF6110"
-link: "https://anvost.com"
+link: https://anvost.com
+image: /mildlee-7-k-ky7-tee-vs-unsplash.jpg
 ---
 
 ## Введение
@@ -32,5 +33,5 @@ link: "https://anvost.com"
 В ходе работы над проектом я познакомился с рядом необходимых технологий и библиотек, таких как:
 
 - Incremental Static Regeneration (ISR) в Next.js
-- Сокет для реализации чата (https://www.npmjs.com/package/react-use-websocket)
+- Сокет для реализации чата (<https://www.npmjs.com/package/react-use-websocket>)
 - Google Firebase Auth - пользователи могут использовать социальные сети для регистрации и авторизации на сайте
