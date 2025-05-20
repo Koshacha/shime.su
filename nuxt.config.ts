@@ -29,18 +29,20 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
+    strategy: "prefix_except_default",
+    defaultLocale: "ru",
     locales: [
       {
         code: "en",
         name: "English",
+        file: "en.ts",
       },
       {
         code: "ru",
         name: "Русский",
+        file: "ru.ts",
       },
     ],
-    defaultLocale: "ru",
-    vueI18n: "./i18n.config.ts",
   },
   tailwindcss: {
     config: {
