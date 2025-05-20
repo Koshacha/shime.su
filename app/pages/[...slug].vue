@@ -17,6 +17,8 @@ useSeoMeta({
   title: page.value.seo.title ?? page.value.title,
   description: page.value.seo.description ?? page.value.description,
 });
+
+console.log("aboba", page.value);
 </script>
 
 <template>
