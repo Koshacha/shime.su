@@ -23,10 +23,11 @@ const showDetails = () => {
     :style="{ animationDelay: `${index * 0.1}s` }"
   >
     <div v-if="project.image" class="relative h-48 overflow-hidden">
-      <img
+      <nuxt-img
         :src="project.image"
         :alt="project.title"
         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        sizes="sm:100vw md:50vw lg:400px"
       />
       <div
         class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"

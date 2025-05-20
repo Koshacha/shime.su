@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "motion-v/nuxt",
     "@nuxtjs/i18n",
     "@nuxt/icon",
+    "@nuxt/image",
   ],
   devtools: { enabled: true },
   future: {
