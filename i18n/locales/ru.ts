@@ -1,5 +1,5 @@
 export default {
-  resume: "/cv-ilya-mazunin-vue-ru.pdf",
+  resume: "/docs/cv-ilya-mazunin-vue-ru.pdf",
   nav: {
     home: "Главная",
     anken: "Проекты",

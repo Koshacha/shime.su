@@ -12,7 +12,7 @@ tags:
 published: true
 icon: doodles:naruto
 color: "#5E9167"
-image: /joshua-aragon-b-mnhuw-f-yr7w-unsplash.jpg
+image: /image/joshua-aragon-b-mnhuw-f-yr7w-unsplash.jpg
 ---
 
 ## Введение

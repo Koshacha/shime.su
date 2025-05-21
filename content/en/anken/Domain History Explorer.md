@@ -11,7 +11,7 @@ icon: doodles:shtuka
 color: black
 layout: project
 link: https://github.com/koshacha/domain-history-checker
-image: /photo-1607723619497-98a79f01ba90.jpeg
+image: /image/photo-1607723619497-98a79f01ba90.jpeg
 ---
 
 ## Introduction

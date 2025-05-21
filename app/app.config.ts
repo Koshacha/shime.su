@@ -1,8 +1,8 @@
 export default defineAppConfig({
   portfolio: {
     primary: "mint",
-    ruResumeFile: "/cv-ilya-mazunin-vue-ru.pdf",
-    enResumeFile: "/cv-ilya-mazunin-vue.pdf",
+    ruResumeFile: "/docs/cv-ilya-mazunin-vue-ru.pdf",
+    enResumeFile: "/docs/cv-ilya-mazunin-vue.pdf",
   },
 
   app: {
@@ -10,27 +10,25 @@ export default defineAppConfig({
   },
 
   contacts: {
-    elsewhere: {
-      "0": {
-        name: "Github",
-        value: "https://test.com",
-      },
-    },
-
     email: "qbub@proton.me",
 
-    elsewhereLinks: [{
-      name: "Telegram",
-      value: "https://t.me/Koshacha",
-    }, {
-      name: "GitHub",
-      value: "https://github.com/Koshacha",
-    }, {
-      name: "Upwork",
-      value: "https://www.upwork.com/freelancers/~01355186bd65b2bf29",
-    }, {
-      name: "LinkedIn",
-      value: "https://www.linkedin.com/in/koshacha",
-    }],
+    elsewhereLinks: [
+      {
+        name: "Telegram",
+        value: "https://t.me/Koshacha",
+      },
+      {
+        name: "GitHub",
+        value: "https://github.com/Koshacha",
+      },
+      {
+        name: "Upwork",
+        value: "https://www.upwork.com/freelancers/~01355186bd65b2bf29",
+      },
+      {
+        name: "LinkedIn",
+        value: "https://www.linkedin.com/in/koshacha",
+      },
+    ],
   },
 });

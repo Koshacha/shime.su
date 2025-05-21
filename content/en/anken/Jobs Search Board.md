@@ -13,7 +13,7 @@ layout: project
 icon: doodles:star-2
 color: "#8A46FF"
 link: "https://jobsandneeds.com"
-image: /cookie-the-pom-si-nd-di9-rp-vy-unsplash.jpg
+image: /image/cookie-the-pom-si-nd-di9-rp-vy-unsplash.jpg
 ---
 
 ## Introduction

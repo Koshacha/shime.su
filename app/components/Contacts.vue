@@ -23,8 +23,8 @@
           </div>
           <div class="grid grid-cols-2 gap-2">
             <a
-              v-for="contact in contacts"
-              :href="contact.href"
+              v-for="contact in config.contacts.elsewhereLinks"
+              :href="contact.value"
               class="text-text-primary hover:text-accent transition-colors"
               >{{ contact.name }}</a
             >

@@ -1,5 +1,5 @@
 export default {
-  resume: "/cv-ilya-mazunin-vue.pdf",
+  resume: "/docs/cv-ilya-mazunin-vue.pdf",
   nav: {
     home: "Home",
     anken: "Projects",

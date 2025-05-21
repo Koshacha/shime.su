@@ -31,6 +31,7 @@ const animations = {
   <motion.a
     :class="cn(BASE_STYLES, variableClasses, props.class)"
     v-bind="{ ...animations, ...$attrs }"
+    :href="$attrs.to"
     v-if="'to' in $attrs"
   >
     <slot />
