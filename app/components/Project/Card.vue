@@ -23,21 +23,26 @@ const showDetails = () => {
     :style="{ animationDelay: `${index * 0.1}s` }"
   >
     <div v-if="project.image" class="relative h-48 overflow-hidden">
-      <nuxt-img
-        :src="project.image"
-        :alt="project.title"
-        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-        sizes="sm:100vw md:50vw lg:400px"
-      />
-      <div
-        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"
-      ></div>
+      <nuxt-link-locale :to="project.path">
+        <nuxt-img
+          :src="project.image"
+          :alt="project.title"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          sizes="sm:100vw md:50vw lg:400px"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"
+        ></div>
+      </nuxt-link-locale>
     </div>
 
     <div class="p-4">
-      <h3 class="text-lg font-semibold text-text-primary mb-1">
+      <nuxt-link-locale
+        :to="project.path"
+        class="text-lg font-semibold text-text-primary mb-1 block"
+      >
         {{ project.title }}
-      </h3>
+      </nuxt-link-locale>
       <div class="flex flex-wrap gap-2 text-sm">
         <span
           v-for="(category, idx) in project.tags"
@@ -48,23 +53,12 @@ const showDetails = () => {
         </span>
       </div>
     </div>
-
-    <div
-      class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-    >
-      <nuxt-link-locale
-        :to="project.path"
-        class="text-xs px-2 py-1 bg-accent/20 backdrop-blur-sm rounded-full text-text-primary"
-      >
-        {{ $t("projects.details") }}
-      </nuxt-link-locale>
-    </div>
   </div>
 </template>
 
 <style scoped>
 .project-card {
-  animation: fadeIn 0.5s ease-out forwards;
+  animation: fadeIn 0.5s linear forwards;
   opacity: 0;
 }
 

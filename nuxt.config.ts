@@ -89,5 +89,14 @@ export default defineNuxtConfig({
       },
     },
   },
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: "vitesse-dark",
+        },
+      },
+    },
+  },
   compatibilityDate: "2024-04-03",
 });

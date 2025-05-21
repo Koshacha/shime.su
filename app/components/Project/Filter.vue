@@ -6,7 +6,7 @@ const model = defineModel<string>();
 </script>
 
 <template>
-  <div class="inline-flex space-x-2">
+  <div class="inline-flex gap-2 flex-wrap justify-center">
     <button
       v-for="category in categories"
       :key="category"
