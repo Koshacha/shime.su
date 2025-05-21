@@ -2,9 +2,9 @@ export default {
   resume: "/docs/cv-ilya-mazunin-vue.pdf",
   nav: {
     home: "Home",
-    anken: "Projects",
-    shigoto: "Work",
-    hito: "Profile",
+    cases: "Projects",
+    work: "Work",
+    me: "Profile",
     resume: "Download CV",
   },
   footer: {

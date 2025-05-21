@@ -8,7 +8,7 @@ export default defineContentConfig({
     }),
     project: defineCollection({
       type: "page",
-      source: "**/anken/**/*.md",
+      source: "**/cases/**/*.md",
       schema: z.object({
         sort: z.number(),
         published: z.boolean(),

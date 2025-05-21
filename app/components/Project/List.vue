@@ -6,7 +6,7 @@ const { locale } = useI18n();
 const { data: projects, status: projectsStatus } = await useAsyncData(
   `posts-${locale.value}`,
   () => {
-    let loc = `/${locale.value}/anken`;
+    let loc = `/${locale.value}/cases`;
 
     loc = loc.replace("/ru", "");
 
