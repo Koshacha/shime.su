@@ -5,6 +5,10 @@ const { data } = await useAsyncData(route.path, () => {
   return queryCollection("content").path(route.path).first();
 });
 
+if (!data.value) {
+  throw createError({ statusCode: 404 });
+}
+
 // if (collection) {
 //   const data = toRef(() => collection.data.value!);
 //   useSeoMeta({ ...data.value.seo });
