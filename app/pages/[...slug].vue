@@ -6,7 +6,7 @@ const { data } = await useAsyncData(route.path, () => {
 });
 
 if (!data.value) {
-  // throw createError({ statusCode: 404 });
+  throw createError({ statusCode: 404 });
 } else {
   useSeoMeta({ ...data.value.seo });
 }
