@@ -32,11 +32,11 @@ export default defineNuxtConfig({
     strategy: "prefix_except_default",
     defaultLocale: "ru",
     locales: [
-      // {
-      //   code: "en",
-      //   name: "English",
-      //   file: "en.ts",
-      // },
+      {
+        code: "en",
+        name: "English",
+        file: "en.ts",
+      },
       {
         code: "ru",
         name: "Русский",
