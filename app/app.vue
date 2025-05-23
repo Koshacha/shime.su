@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col text-lg">
     <TheHeader />
-    <NuxtLayout>
+    <NuxtLayout :name="isMainPage ? 'main' : 'default'">
       <NuxtPage />
     </NuxtLayout>
   </div>
