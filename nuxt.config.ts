@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
     "motion-v/nuxt",
-    "@nuxtjs/i18n",
+    // "@nuxtjs/i18n",
     "@nuxt/icon",
     "@nuxt/image",
   ],
@@ -28,22 +28,22 @@ export default defineNuxtConfig({
       ],
     },
   },
-  i18n: {
-    strategy: "prefix_except_default",
-    defaultLocale: "ru",
-    locales: [
-      {
-        code: "en",
-        name: "English",
-        file: "en.ts",
-      },
-      {
-        code: "ru",
-        name: "Русский",
-        file: "ru.ts",
-      },
-    ],
-  },
+  // i18n: {
+  //   strategy: "prefix_except_default",
+  //   defaultLocale: "ru",
+  //   locales: [
+  //     {
+  //       code: "en",
+  //       name: "English",
+  //       file: "en.ts",
+  //     },
+  //     {
+  //       code: "ru",
+  //       name: "Русский",
+  //       file: "ru.ts",
+  //     },
+  //   ],
+  // },
   tailwindcss: {
     config: {
       content: [
