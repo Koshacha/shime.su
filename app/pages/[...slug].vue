@@ -6,13 +6,10 @@ const { data } = await useAsyncData(route.path, () => {
 });
 
 if (!data.value) {
-  throw createError({ statusCode: 404 });
+  // throw createError({ statusCode: 404 });
+} else {
+  useSeoMeta({ ...data.value.seo });
 }
-
-// if (collection) {
-//   const data = toRef(() => collection.data.value!);
-//   useSeoMeta({ ...data.value.seo });
-// }
 </script>
 
 <template>
