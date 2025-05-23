@@ -5,8 +5,12 @@ const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection("content").path(route.path).first();
 });
 
-if (!page.value) {
+watch(page, (newPage) => {
   console.log("Page not found", route.path);
+  console.log(newPage);
+});
+
+if (!page.value) {
   // throw createError({
   //   statusCode: 404,
   //   statusMessage: "Page not found",
