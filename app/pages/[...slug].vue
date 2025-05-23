@@ -1,12 +1,14 @@
 <script setup lang="ts">
 const route = useRoute();
 
-const collection = await useAsyncData(route.path, () => {
+const { data } = await useAsyncData(route.path, () => {
   return queryCollection("content").path(route.path).first();
 });
 
-const data = toRef(() => collection.data.value!);
-useSeoMeta({ ...data.value.seo });
+// if (collection) {
+//   const data = toRef(() => collection.data.value!);
+//   useSeoMeta({ ...data.value.seo });
+// }
 </script>
 
 <template>
