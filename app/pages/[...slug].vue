@@ -5,7 +5,7 @@ const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection("content").path(route.path).first();
 });
 
-if (!page.value && import.meta.server) {
+if (!page.value) {
   console.log("Page not found", route.path);
   // throw createError({
   //   statusCode: 404,
