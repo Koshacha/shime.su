@@ -6,19 +6,20 @@ const { data: page } = await useAsyncData("page-" + route.path, () => {
 });
 
 if (!page.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: "Page not found",
-    fatal: true,
+  // throw createError({
+  //   statusCode: 404,
+  //   statusMessage: "Page not found",
+  //   fatal: true,
+  // });
+} else {
+  useSeoMeta({
+    title: page.value.seo.title ?? page.value.title,
+    description: page.value.seo.description ?? page.value.description,
   });
 }
-
-useSeoMeta({
-  title: page.value.seo.title ?? page.value.title,
-  description: page.value.seo.description ?? page.value.description,
-});
 </script>
 
 <template>
   <ContentRenderer v-if="page" :value="page" />
+  <p v-else>not found</p>
 </template>
