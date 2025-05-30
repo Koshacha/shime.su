@@ -10,7 +10,7 @@ const props = defineProps<{
 }>();
 
 const container = useTemplateRef("container");
-const DEFAULT_CLASS = "columns-2 sm:columns-2";
+const DEFAULT_CLASS = "columns-2";
 
 if (props.images.length !== props.alts.length) {
   throw new Error("Images and alts arrays must have the same length.");
