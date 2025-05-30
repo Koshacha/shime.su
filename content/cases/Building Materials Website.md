@@ -33,26 +33,25 @@ image: /image/nokting-je-3d0t2-h-ha-y9o-unsplash.jpg
 
 ::gallery
 ---
+alts:
+  - Хедер на главной
 images:
   - /image/cases/stroymarket/stroymarket-2.jpg
-alts:
-  - Main page header
+class: columns-1
 ---
-
 ::
 
 ::gallery
 ---
+alts:
+  - Страница новостей, мобильная
+  - Категории в каталоге
+  - Категории в каталоге (моб.)
+  - Каталог
 images:
   - /image/cases/stroymarket/stroymarket-1.jpg
   - /image/cases/stroymarket/stroymarket-3.jpg
   - /image/cases/stroymarket/stroymarket-4.jpg
   - /image/cases/stroymarket/stroymarket-5.jpg
-alts:
-  - News page mobile
-  - Catalog categories
-  - Catalog categories aside (mobile)
-  - Catalog items
 ---
-
 ::
