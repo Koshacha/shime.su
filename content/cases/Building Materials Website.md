@@ -20,7 +20,7 @@ image: /image/nokting-je-3d0t2-h-ha-y9o-unsplash.jpg
 
 - Созданный мной шаблон Gulp.js, который я использовал для разработки: [github.com/koshacha/gulp-boilerplate](https://github.com/koshacha/gulp-boilerplate)
 
-## Techstack
+## Техстек
 
 - Pug/Jade
 - SCSS
@@ -28,3 +28,31 @@ image: /image/nokting-je-3d0t2-h-ha-y9o-unsplash.jpg
 - jQuery
 - Gulp
 - CMS «1С-Битрикс
+
+## Скриншоты
+
+::gallery
+---
+images:
+  - /image/cases/stroymarket/stroymarket-2.jpg
+alts:
+  - Main page header
+---
+
+::
+
+::gallery
+---
+images:
+  - /image/cases/stroymarket/stroymarket-1.jpg
+  - /image/cases/stroymarket/stroymarket-3.jpg
+  - /image/cases/stroymarket/stroymarket-4.jpg
+  - /image/cases/stroymarket/stroymarket-5.jpg
+alts:
+  - News page mobile
+  - Catalog categories
+  - Catalog categories aside (mobile)
+  - Catalog items
+---
+
+::
