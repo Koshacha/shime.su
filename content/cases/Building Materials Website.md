@@ -18,7 +18,7 @@ image: /image/nokting-je-3d0t2-h-ha-y9o-unsplash.jpg
 
 ## Введение
 
-- Созданный мной шаблон Gulp.js, который я использовал для разработки: [github.com/koshacha/gulp-boilerplate](https://github.com/koshacha/gulp-boilerplate)
+- Мой бойлерплейт репозиторий с Gulp.js, который я использовал для разработки: [github.com/koshacha/gulp-boilerplate](https://github.com/koshacha/gulp-boilerplate)
 
 ## Техстек
 
@@ -27,7 +27,7 @@ image: /image/nokting-je-3d0t2-h-ha-y9o-unsplash.jpg
 - Bootstrap CSS
 - jQuery
 - Gulp
-- CMS «1С-Битрикс
+- CMS 1С-Битрикс
 
 ## Скриншоты
 

@@ -35,3 +35,25 @@ image: /image/mildlee-7-k-ky7-tee-vs-unsplash.jpg
 - Incremental Static Regeneration (ISR) в Next.js
 - Сокет для реализации чата (<https://www.npmjs.com/package/react-use-websocket>)
 - Google Firebase Auth - пользователи могут использовать социальные сети для регистрации и авторизации на сайте
+
+## Скриншоты
+
+::gallery
+---
+alts:
+  - Лендинг
+  - Список магазинов
+  - Страница настроек
+  - Детальная страница магазина
+  - Лендинг
+  - Страница платного продвижения на платформе
+images:
+  - /image/cases/nvst/image-2.jpg
+  - /image/cases/nvst/image-5.jpg
+  - /image/cases/nvst/image-1.jpg
+  - /image/cases/nvst/image-4.jpg
+  - /image/cases/nvst/image-3.jpg
+  - /image/cases/nvst/image-6.jpg
+---
+::
+

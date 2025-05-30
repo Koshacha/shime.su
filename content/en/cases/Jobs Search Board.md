@@ -12,7 +12,7 @@ tags:
 layout: project
 icon: doodles:star-2
 color: "#8A46FF"
-link: "https://jobsandneeds.com"
+link: https://jobsandneeds.com
 image: /image/cookie-the-pom-si-nd-di9-rp-vy-unsplash.jpg
 ---
 
@@ -36,4 +36,29 @@ In contact with Advertising Specialist, I got to learn about a lot of different 
 
 Part of my job was also to improve the reputation of our domains for email services, reduce the risk of getting into the spam folder, and make users more likely to actually open emails.
 
-## Images
+## Screenshots
+
+::gallery
+---
+alts:
+  - Job search page
+images:
+  - /image/cases/jobs/image-4.jpg
+class: columns-1
+---
+::
+
+::gallery
+---
+alts:
+  - about us page
+  - Page sections on the main page
+  - Search input on the main page
+  - Job search mobile page
+images:
+  - /image/cases/jobs/image-1.jpg
+  - /image/cases/jobs/image-3.jpg
+  - /image/cases/jobs/image-2.jpg
+  - /image/cases/jobs/image-5.jpg
+---
+::

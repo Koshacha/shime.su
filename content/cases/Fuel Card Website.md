@@ -20,3 +20,16 @@ image: /image/erik-mclean-w85w-c-felnmw-unsplash.jpg
 ## Ссылки
 
 - Созданный мной шаблон Gulp.js, который я использовал для разработки: [github.com/koshacha/gulp-boilerplate](https://github.com/koshacha/gulp-boilerplate)
+
+## Скриншоты
+
+::gallery
+---
+alts:
+  - Главная
+  - Каталог топливных карт
+images:
+  - /image/cases/cards/card-1.jpg
+  - /image/cases/cards/card-2.jpg
+---
+::

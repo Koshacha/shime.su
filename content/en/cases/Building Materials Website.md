@@ -11,7 +11,7 @@ published: true
 icon: doodles:floor
 color: "#FF4746"
 layout: project
-link: "https://stroymarket23.ru/"
+link: https://stroymarket23.ru/
 image: /image/nokting-je-3d0t2-h-ha-y9o-unsplash.jpg
 ---
 
@@ -28,4 +28,30 @@ image: /image/nokting-je-3d0t2-h-ha-y9o-unsplash.jpg
 - Gulp
 - 1C-Bitrix CMS
 
-## Images:
+## Screenshots
+
+::gallery
+---
+alts:
+  - Main page
+images:
+  - /image/cases/stroymarket/stroymarket-2.jpg
+class: columns-1
+---
+::
+
+::gallery
+---
+alts:
+  - News (mobile)
+  - Catalog categories
+  - Catalog categories (mobile)
+  - Catalog
+images:
+  - /image/cases/stroymarket/stroymarket-1.jpg
+  - /image/cases/stroymarket/stroymarket-3.jpg
+  - /image/cases/stroymarket/stroymarket-4.jpg
+  - /image/cases/stroymarket/stroymarket-5.jpg
+---
+::
+

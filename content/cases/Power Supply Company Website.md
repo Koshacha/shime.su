@@ -28,3 +28,14 @@ image: /image/dynamic-wang-aiv7-jj-jb0-unsplash.jpg
 - jQuery
 - Gulp
 - 1C-Bitrix CMS
+
+## Скриншоты
+
+::gallery
+---
+alts:
+  - Главная
+images:
+  - /image/cases/novit/noviten-1.jpg
+---
+::

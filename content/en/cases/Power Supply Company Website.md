@@ -1,5 +1,6 @@
 ---
-description: A corporate website for an energy supply company, created with Bootstrap and CMS 1C-Bitrix.
+description: A corporate website for an energy supply company, created with
+  Bootstrap and CMS 1C-Bitrix.
 seoDescription: A corporate website for an energy supply company, created with
   Bootstrap and CMS 1C-Bitrix in Ilya's Mazunin Portfolio.
 year: 2020
@@ -10,7 +11,7 @@ icon: doodles:neft
 color: "#41BB85"
 tags:
   - CMS
-link: "https://www.noviten.ru/"
+link: https://www.noviten.ru/
 image: /image/dynamic-wang-aiv7-jj-jb0-unsplash.jpg
 ---
 
@@ -27,4 +28,13 @@ image: /image/dynamic-wang-aiv7-jj-jb0-unsplash.jpg
 - Gulp
 - 1C-Bitrix CMS
 
-## Images
+## Screenshots
+
+::gallery
+---
+alts:
+  - Main page
+images:
+  - /image/cases/novit/noviten-1.jpg
+---
+::

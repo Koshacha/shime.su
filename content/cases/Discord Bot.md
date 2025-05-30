@@ -43,6 +43,31 @@ image: /image/discord.jpg
 
 В процессе работы я познакомился с Nest.js и Discord.js поближе, получил опыт разработки ботов. Я настроил Github Actions так, чтобы образ на Docker Hub обновлялся после изменений в основной ветке репозитория.
 
+## Скриншоты
+
+::gallery
+---
+alts:
+  - Рейтинг участников сервера
+images:
+  - /image/cases/paimon/rating.gif
+class: columns-1
+---
+::
+
+::gallery
+---
+alts:
+  - Скиллчек
+  - Вывод рейтинга, в случае малого количества сообщений
+  - Меню команд бота
+images:
+  - /image/cases/paimon/image-2.jpg
+  - /image/cases/paimon/image-3.jpg
+  - /image/cases/paimon/image-1.jpg
+---
+::
+
 ## Запуск бота с помощью docker compose
 
 Прежде всего, вам нужно создать файл docker-compose.yml со следующим содержимым:
@@ -77,7 +102,7 @@ GOOGLE_PRIVATE_KEY=""
 
 Конечно, сначала вам нужно будет получить токен Discord и ключи Google Firebase.
 
-Все, что вам нужно сделать, это запустить приложение с помощью команды:
+Все, что вам останется сделать, так это запустить приложение с помощью команды:
 
 ```bash
 docker-compose up -d

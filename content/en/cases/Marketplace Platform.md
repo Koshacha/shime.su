@@ -10,7 +10,7 @@ layout: project
 published: true
 icon: doodles:cross
 color: "#FF6110"
-link: "https://anvost.com"
+link: https://anvost.com
 image: /image/mildlee-7-k-ky7-tee-vs-unsplash.jpg
 ---
 
@@ -31,7 +31,26 @@ SEO-optimization, availability of every page of the site in search engine result
 During the course of the project, I became familiar with a number of essential technologies and libraries such as:
 
 - Incremental Static Regeneration (ISR) in Next.js
-- Socket for implementing chat (https://www.npmjs.com/package/react-use-websocket)
+- Socket for implementing chat (<https://www.npmjs.com/package/react-use-websocket>)
 - Google Firebase Auth - users can use social networks for registration and or authorization on the site
 
-## Images
+## Screenshots
+
+::gallery
+---
+alts:
+  - Landing page
+  - Shops list
+  - Settings page
+  - Shop's detail page
+  - Advantages section on landing page
+  - Paid promotion page
+images:
+  - /image/cases/nvst/image-2.jpg
+  - /image/cases/nvst/image-5.jpg
+  - /image/cases/nvst/image-1.jpg
+  - /image/cases/nvst/image-4.jpg
+  - /image/cases/nvst/image-3.jpg
+  - /image/cases/nvst/image-6.jpg
+---
+::

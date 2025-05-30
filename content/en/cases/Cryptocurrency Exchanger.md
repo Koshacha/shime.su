@@ -10,7 +10,7 @@ seoDescription: Cryptocurrency exchanger project featuring React.js, React
 color: "#5077FF"
 icon: doodles:sphere
 layout: project
-link: "https://deswop.com"
+link: https://deswop.com
 image: /image/bobots.jpg
 ---
 
@@ -36,20 +36,19 @@ I decided to fully type Socket.io inbound and outbound, but as it turns out, the
 
 Incoming messages:
 
-- _ticker_ - contains either exchange rate data or current order data
-- _order_ - contains data about created, requested order.
+- *ticker* - contains either exchange rate data or current order data
+- *order* - contains data about created, requested order.
 
 And here are the outgoing messages. They are more complicated, because from the backend side all these messages were received with a single identifier "order".
 
-- _currencies_ - request currency data.
-- _order_data_ - request order data.
-- _change_ - create a request for currency exchange
-- _rate_ - evaluate the work of the service, whether the order was fulfilled (or not).
+- *currencies* - request currency data.
+- *order\_data* - request order data.
+- *change* - create a request for currency exchange
+- *rate* - evaluate the work of the service, whether the order was fulfilled (or not).
 
 I wrote the following code, which completely covered my needs in this typing and works just perfectly.
 
 ::prose-code
-
 ```ts
 interface ServerToClientEvents {
   ticker: (
@@ -65,7 +64,19 @@ export interface ClientSocket extends Socket<ServerToClientEvents> {
   emit(event: "order", type: "rate", dto: OrderRateDto): this;
 }
 ```
-
 ::
 
-## Images
+## Screenshots
+
+::gallery
+---
+alts:
+  - Widget
+  - Payment page
+  - Advantages
+images:
+  - /image/cases/dswp/image-1.jpg
+  - /image/cases/dswp/image-3.jpg
+  - /image/cases/dswp/image-2.jpg
+---
+::
