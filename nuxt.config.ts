@@ -31,16 +31,19 @@ export default defineNuxtConfig({
   i18n: {
     strategy: "prefix_except_default",
     defaultLocale: "ru",
+    differentDomains: true,
     locales: [
       {
         code: "en",
         name: "English",
         file: "en.ts",
+        domain: "en.shime.su",
       },
       {
         code: "ru",
         name: "Русский",
         file: "ru.ts",
+        domain: "shime.su",
       },
     ],
   },

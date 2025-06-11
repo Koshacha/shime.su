@@ -13,9 +13,9 @@
       ref="target"
       class="absolute right-0 mt-2 w-32 bg-secondary rounded-lg shadow-lg py-1 border border-accent/10"
     >
-      <switch-locale-path-link
+      <a
         v-for="lang in locales"
-        :locale="lang.code"
+        :href="switchLocalePath(lang.code)"
         :key="lang.code"
         class="block w-full px-4 py-2 text-left hover:bg-accent/10 transition-colors text-sm"
         :class="
@@ -23,7 +23,7 @@
         "
       >
         {{ lang.name }}
-      </switch-locale-path-link>
+      </a>
     </div>
   </div>
 </template>
@@ -39,6 +39,7 @@ import { useTemplateRef } from "vue";
 type AvailableLocales = "en" | "ru";
 
 const { locale } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
 
 const locales: Array<{
   code: AvailableLocales;
