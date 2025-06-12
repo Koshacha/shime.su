@@ -1,12 +1,11 @@
 export default defineAppConfig({
   portfolio: {
-    primary: "mint",
     ruResumeFile: "/docs/cv-ilya-mazunin-vue-ru.pdf",
     enResumeFile: "/docs/cv-ilya-mazunin-vue.pdf",
   },
 
   app: {
-    updateDate: "20.5.2025",
+    updateDate: "13.6.2025",
   },
 
   contacts: {

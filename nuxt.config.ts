@@ -14,6 +14,8 @@ export default defineNuxtConfig({
   routeRules: {
     "/": { prerender: true },
     "/me": { prerender: true },
+    "/cases": { prerender: true },
+    "/cases/**": { prerender: true },
     "/work": { prerender: true },
   },
   future: {
