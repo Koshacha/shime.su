@@ -73,7 +73,7 @@ export interface ClientSocket extends Socket<ServerToClientEvents> {
 
 ## Скриншоты
 
-## ::gallery
+::gallery
 
 alts:
 

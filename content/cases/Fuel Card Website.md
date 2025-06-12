@@ -23,7 +23,7 @@ image: /image/maria.jpg
 
 ## Скриншоты
 
-## ::gallery
+::gallery
 
 alts:
 

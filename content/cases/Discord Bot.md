@@ -45,7 +45,7 @@ image: /image/leo.jpg
 
 ## Скриншоты
 
-## ::gallery
+::gallery
 
 alts:
 
@@ -58,7 +58,7 @@ alts:
 
 ::
 
-## ::gallery
+::gallery
 
 alts:
 

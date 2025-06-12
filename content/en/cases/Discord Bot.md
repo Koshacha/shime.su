@@ -44,7 +44,7 @@ In the course of work I got to know Nest.js and Discord.js better, gained experi
 
 ## Screenshots
 
-## ::gallery
+::gallery
 
 alts:
 
@@ -57,7 +57,7 @@ alts:
 
 ::
 
-## ::gallery
+::gallery
 
 alts:
 
