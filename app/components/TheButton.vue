@@ -8,7 +8,7 @@ const { variant = "primary", ...props } = defineProps<{
 }>();
 
 const BASE_STYLES =
-  "inline-flex items-center px-4 py-2 bg-accent text-primary rounded-full  transition-colors font-medium";
+  "inline-flex items-center px-4 py-2 text-primary rounded-full  transition-colors font-medium";
 
 const variableClasses = computed(() => {
   return {

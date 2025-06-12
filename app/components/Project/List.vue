@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 const { locale } = useI18n();
 
-const { data: projects, status: projectsStatus } = await useAsyncData(
+const { data: projects, status: projectsStatus } = await useLazyAsyncData(
   `posts-${locale.value}`,
   () => {
     let loc = `/${locale.value}/cases`;
@@ -15,13 +15,10 @@ const { data: projects, status: projectsStatus } = await useAsyncData(
       .where("path", "LIKE", `${loc}/%`)
       .order("sort", "DESC")
       .all();
-  },
-  {
-    lazy: true,
   }
 );
 
-const { data: categories, status: categoriesStatus } = await useAsyncData(
+const { data: categories, status: categoriesStatus } = await useLazyAsyncData(
   `cats-${locale.value}`,
   async () => {
     const pages = await queryCollection("project")
@@ -33,9 +30,6 @@ const { data: categories, status: categoriesStatus } = await useAsyncData(
     const distinctTags = new Set(pages.map((page) => page.tags).flat());
 
     return ["", ...distinctTags];
-  },
-  {
-    lazy: true,
   }
 );
 

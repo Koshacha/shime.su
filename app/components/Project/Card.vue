@@ -20,7 +20,6 @@ const showDetails = () => {
   <div
     class="project-card group relative bg-secondary rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl cursor-pointer"
     @click="showDetails"
-    :style="{ animationDelay: `${index * 0.1}s` }"
   >
     <div v-if="project.image" class="relative h-48 overflow-hidden">
       <nuxt-link-locale :to="project.path">
@@ -55,21 +54,3 @@ const showDetails = () => {
     </div>
   </div>
 </template>
-
-<style scoped>
-.project-card {
-  animation: fadeIn 0.5s linear forwards;
-  opacity: 0;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>

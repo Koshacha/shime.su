@@ -16,8 +16,14 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      meta: [
+        {
+          name: "yandex-verification",
+          content: "736e38214d13864b",
+        },
+      ],
       bodyAttrs: {
-        class: "dark:bg-neutral-900 dark:text-white bg-white",
+        class: "bg-neutral-900",
       },
       script: [
         {

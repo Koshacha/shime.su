@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { motion } from "motion-v";
+
+const route = useRoute();
+
 const { data } = await useAsyncData("navigation", () => {
   return queryCollectionNavigation("content").where("path", "NOT LIKE", "/en%");
 });
@@ -11,6 +14,13 @@ defineProps<{
 defineEmits<{
   (e: "changed"): void;
 }>();
+
+const currentRoute = computed(() => {
+  let path = route.path;
+  path = path.replace("/en", "/").replace("//", "/");
+  if (path.startsWith("/cases")) return "/cases";
+  return path;
+});
 </script>
 
 <template>
@@ -21,7 +31,7 @@ defineEmits<{
       :to="route.path"
       class="px-4 py-1.5 rounded-full transition-all duration-300 relative"
       :class="
-        $route.path === route.path || $route.path === `/en${route.path}`
+        route.path === currentRoute
           ? 'text-text-primary'
           : 'text-text-secondary hover:text-text-primary'
       "
@@ -29,11 +39,7 @@ defineEmits<{
     >
       {{ $t(`nav.${route.path === "/" ? "home" : route.path.slice(1)}`) }}
       <motion.div
-        v-if="
-          $route.path === route.path ||
-          $route.path === `/en${route.path}` ||
-          `${$route.path}/` === `/en${route.path}`
-        "
+        v-if="route.path === currentRoute"
         class="absolute inset-0 bg-accent/20 rounded-full"
         layout-id="background-card"
         id="background-card"
@@ -48,7 +54,7 @@ defineEmits<{
       @click="() => $emit('changed')"
       class="px-4 py-2 rounded-lg transition-colors"
       :class="
-        $route.path === route.path || $route.path === `/en${route.path}`
+        route.path === currentRoute
           ? 'bg-accent/20 text-text-primary'
           : 'text-text-secondary hover:text-text-primary'
       "
