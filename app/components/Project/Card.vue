@@ -4,6 +4,7 @@ defineProps<{
     path: string;
     image: string;
     title: string;
+    description: string;
     tags: string[];
   };
   index: number;
@@ -28,6 +29,9 @@ const showDetails = () => {
           :alt="project.title"
           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           sizes="sm:100vw md:50vw lg:400px"
+          @load="() => {
+            console.log(`Image loaded for project: ${project.title}`);
+          }"
         />
         <div
           class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"
@@ -42,14 +46,8 @@ const showDetails = () => {
       >
         {{ project.title }}
       </nuxt-link-locale>
-      <div class="flex flex-wrap gap-2 text-sm">
-        <span
-          v-for="(category, idx) in project.tags"
-          :key="idx"
-          class="text-text-secondary"
-        >
-          {{ category }}
-        </span>
+      <div class="text-text-secondary text-sm">
+        {{ project.description }}
       </div>
     </div>
   </div>

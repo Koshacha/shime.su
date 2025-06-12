@@ -12,7 +12,7 @@ tags:
 icon: doodles:round
 layout: project
 link: https://tver-karta.ru/
-image: /image/erik-mclean-w85w-c-felnmw-unsplash.jpg
+image: /image/maria.jpg
 ---
 
 ## Links

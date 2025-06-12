@@ -2,7 +2,7 @@
   <div class="relative">
     <button
       @click="isLanguageMenuOpen = !isLanguageMenuOpen"
-      class="px-3 py-1.5 rounded-full bg-accent/10 hover:bg-accent/20 transition-colors text-text-primary flex items-center space-x-1"
+      class="px-3 py-1.5 rounded-full bg-secondary hover:bg-secondary/70 transition-colors text-text-primary flex items-center space-x-1"
     >
       <span>{{ locale.toLocaleUpperCase() }}</span>
       <!-- <span class="ml-1 text-xs">▼</span> -->

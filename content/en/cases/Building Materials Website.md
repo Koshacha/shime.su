@@ -12,7 +12,7 @@ icon: doodles:floor
 color: "#FF4746"
 layout: project
 link: https://stroymarket23.ru/
-image: /image/nokting-je-3d0t2-h-ha-y9o-unsplash.jpg
+image: /image/angele.jpg
 ---
 
 ## Introduction

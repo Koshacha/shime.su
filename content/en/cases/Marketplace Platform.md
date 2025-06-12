@@ -11,7 +11,7 @@ published: true
 icon: doodles:cross
 color: "#FF6110"
 link: https://anvost.com
-image: /image/mildlee-7-k-ky7-tee-vs-unsplash.jpg
+image: /image/nick.jpg
 ---
 
 ## Introduction

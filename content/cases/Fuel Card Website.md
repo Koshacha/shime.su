@@ -14,7 +14,7 @@ color: black
 icon: doodles:round
 layout: project
 link: https://tver-karta.ru/
-image: /image/erik-mclean-w85w-c-felnmw-unsplash.jpg
+image: /image/maria.jpg
 ---
 
 ## Ссылки
@@ -23,13 +23,16 @@ image: /image/erik-mclean-w85w-c-felnmw-unsplash.jpg
 
 ## Скриншоты
 
-::gallery
----
+## ::gallery
+
 alts:
-  - Главная
-  - Каталог топливных карт
-images:
-  - /image/cases/cards/card-1.jpg
-  - /image/cases/cards/card-2.jpg
+
+- Главная
+- Каталог топливных карт
+  images:
+- /image/cases/cards/card-1.jpg
+- /image/cases/cards/card-2.jpg
+
 ---
+
 ::

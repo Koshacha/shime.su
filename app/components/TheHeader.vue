@@ -34,7 +34,7 @@ onClickOutside(target, () => (isMobileMenuOpen.value = false));
   >
     <div class="container mx-auto flex items-center justify-between">
       <div
-        class="hidden md:flex items-center bg-secondary/50 rounded-full px-1.5 py-1.5 relative"
+        class="hidden md:flex items-center bg-secondary rounded-full px-1.5 py-1.5 relative"
       >
         <nuxt-link-locale
           to="/"

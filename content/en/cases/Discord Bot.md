@@ -11,7 +11,7 @@ color: "#F7BFBE"
 icon: doodles:star
 layout: project
 link: https://discord.com/oauth2/authorize?client_id=1121418492097343589&permissions=275012176976&scope=bot
-image: /image/discord.jpg
+image: /image/leo.jpg
 ---
 
 ## Introduction
@@ -44,27 +44,33 @@ In the course of work I got to know Nest.js and Discord.js better, gained experi
 
 ## Screenshots
 
-::gallery
----
+## ::gallery
+
 alts:
-  - Guild members rating
-images:
-  - /image/cases/paimon/rating.gif
-class: columns-1
+
+- Guild members rating
+  images:
+- /image/cases/paimon/rating.gif
+  class: columns-1
+
 ---
+
 ::
 
-::gallery
----
+## ::gallery
+
 alts:
-  - Skillcheck
-  - Rating output, if we do not have enough messages on server
-  - Commands menu
-images:
-  - /image/cases/paimon/image-2.jpg
-  - /image/cases/paimon/image-3.jpg
-  - /image/cases/paimon/image-1.jpg
+
+- Skillcheck
+- Rating output, if we do not have enough messages on server
+- Commands menu
+  images:
+- /image/cases/paimon/image-2.jpg
+- /image/cases/paimon/image-3.jpg
+- /image/cases/paimon/image-1.jpg
+
 ---
+
 ::
 
 ## Launch the bot using docker compose

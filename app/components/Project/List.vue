@@ -11,7 +11,7 @@ const { data: projects, status: projectsStatus } = await useLazyAsyncData(
     loc = loc.replace("/ru", "");
 
     return queryCollection("project")
-      .select("id", "title", "path", "tags", "image")
+      .select("id", "title", "path", "tags", "description", "sort", "image")
       .where("path", "LIKE", `${loc}/%`)
       .order("sort", "DESC")
       .all();
@@ -51,7 +51,7 @@ const filteredProjects = computed(() => {
 <template>
   <div v-if="categoriesStatus === 'success' && projectsStatus === 'success'">
     <div class="mb-8 overflow-x-auto whitespace-nowrap pb-2">
-      <project-filter :categories="categories" v-model="activeCategory" />
+      <project-filter :categories="categories ?? []" v-model="activeCategory" />
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

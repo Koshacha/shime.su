@@ -13,7 +13,7 @@ published: true
 icon: doodles:flower
 color: "#9A4574"
 link: https://github.com/koshacha/database-reader
-image: /image/daniel-romero-73t-f-tw-or-k-pg-unsplash.jpg
+image: /image/the-cleveland.jpg
 ---
 
 ## Введение

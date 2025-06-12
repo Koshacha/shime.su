@@ -10,7 +10,7 @@ tags:
 icon: doodles:naruto
 color: "#5E9167"
 link: "https://leerob.io/"
-image: /image/joshua-aragon-b-mnhuw-f-yr7w-unsplash.jpg
+image: /image/pawel.jpg
 ---
 
 ## Introduction
