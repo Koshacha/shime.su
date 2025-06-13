@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 const { locale } = useI18n();
 
-const { data: projects, status: projectsStatus } = await useLazyAsyncData(
+const { data: projects, status: projectsStatus } = await useAsyncData(
   `posts-${locale.value}`,
   () => {
     let loc = `/${locale.value}/cases`;
@@ -18,7 +18,7 @@ const { data: projects, status: projectsStatus } = await useLazyAsyncData(
   }
 );
 
-const { data: categories, status: categoriesStatus } = await useLazyAsyncData(
+const { data: categories, status: categoriesStatus } = await useAsyncData(
   `cats-${locale.value}`,
   async () => {
     const pages = await queryCollection("project")

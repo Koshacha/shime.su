@@ -9,15 +9,9 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/icon",
     "@nuxt/image",
+    "@nuxtjs/sitemap",
   ],
   devtools: { enabled: false },
-  routeRules: {
-    "/": { prerender: true },
-    "/me": { prerender: true },
-    "/cases": { prerender: true },
-    "/cases/**": { prerender: true },
-    "/work": { prerender: true },
-  },
   future: {
     compatibilityVersion: 4,
   },

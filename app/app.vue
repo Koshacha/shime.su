@@ -1,5 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col text-lg">
+    <NuxtLoadingIndicator />
     <TheHeader />
     <NuxtLayout :name="layout">
       <NuxtPage />
