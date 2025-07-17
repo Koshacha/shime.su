@@ -5,7 +5,7 @@ export default {
     cases: "Проекты",
     work: "Работа",
     me: "Обо мне",
-    resume: "Скачать портфолио",
+    resume: "Скачать резюме",
   },
   footer: {
     "back-to-top": "Наверх",
