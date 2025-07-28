@@ -1,17 +1,13 @@
 <script setup lang="ts">
-const route = useRoute();
+const { data: page } = await useContentPage();
 
-const { data } = await useAsyncData(route.path, () => {
-  return queryCollection("content").path(route.path).first();
-});
-
-if (!data.value) {
+if (!page.value) {
   throw createError({ statusCode: 404 });
 } else {
-  useSeoMeta({ ...data.value.seo });
+  useSeoMeta({ ...page.value.seo });
 }
 </script>
 
 <template>
-  <ContentRenderer v-if="data" :value="data" />
+  <ContentRenderer v-if="page" :value="page" />
 </template>
