@@ -12,7 +12,7 @@ color: "#F7BFBE"
 icon: doodles:star
 layout: project
 link: https://discord.com/oauth2/authorize?client_id=1121418492097343589&permissions=275012176976&scope=bot
-image: /image/leo.jpg
+image: /image/purple-thing.jpg
 ---
 
 ## Введение
@@ -46,32 +46,26 @@ image: /image/leo.jpg
 ## Скриншоты
 
 ::gallery
-
-alts:
-
-- Рейтинг участников сервера
-  images:
-- /image/cases/paimon/rating.gif
-  class: columns-1
-
 ---
-
+class: columns-1
+alts:
+- Рейтинг участников сервера
+images:
+- /image/cases/paimon/rating.gif
+---
 ::
 
 ::gallery
-
+---
 alts:
-
 - Скиллчек
 - Вывод рейтинга, в случае малого количества сообщений
 - Меню команд бота
-  images:
+images:
 - /image/cases/paimon/image-2.jpg
 - /image/cases/paimon/image-3.jpg
 - /image/cases/paimon/image-1.jpg
-
 ---
-
 ::
 
 ## Запуск бота с помощью docker compose

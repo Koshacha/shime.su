@@ -28,6 +28,8 @@ body {
 }
 
 .content {
+  --main-color: var(--custom-color, var(--accent));
+
   > div {
     @apply space-y-6;
   }
@@ -44,11 +46,20 @@ body {
     @apply text-text-secondary text-lg leading-relaxed;
   }
 
+  ul li {
+    @apply before:content-['–'] before:mr-2;
+  }
+
   li {
     @apply text-text-secondary;
   }
 
   code {
     @apply block max-w-full overflow-x-scroll;
+  }
+
+  p a,
+  li a {
+    @apply text-accent font-medium underline underline-offset-4 hover:decoration-2 hover:decoration-[var(--main-color)];
   }
 }
