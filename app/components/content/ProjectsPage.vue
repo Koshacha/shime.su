@@ -6,6 +6,6 @@
       {{ $t("projects.title") }}
     </h1>
 
-    <lazy-project-list />
+    <project-list />
   </div>
 </template>

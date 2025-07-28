@@ -15,6 +15,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+  site: { url: "shime.su" },
   app: {
     head: {
       meta: [
@@ -50,6 +51,9 @@ export default defineNuxtConfig({
         file: "ru.ts",
       },
     ],
+  },
+  image: {
+    format: ["webp", "avif", "jpeg", "jpg", "png"],
   },
   tailwindcss: {
     config: {
@@ -106,4 +110,7 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: "2024-04-03",
+  routeRules: {
+    "/**": { prerender: true },
+  },
 });
