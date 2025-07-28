@@ -19,6 +19,9 @@ if (props.images.length !== props.alts.length) {
 onMounted(() => {
   Fancybox.bind(container.value, "a", {});
 });
+
+const hasError = ref<boolean>(false);
+
 </script>
 
 <template>
@@ -26,6 +29,7 @@ onMounted(() => {
     class="gap-4 my-8"
     :class="cn(DEFAULT_CLASS, props.class)"
     ref="container"
+    :style="{ visibility: hasError ? 'hidden' : 'visible' }"
   >
     <div v-for="(src, i) in images" class="column relative mb-4" key="src">
       <a
@@ -39,6 +43,7 @@ onMounted(() => {
           :alt="alts[i]"
           class="w-full h-full object-cover rounded-md my-0"
           sizes="sm:100vw md:50vw"
+          @error="hasError = true"
         />
       </a>
     </div>
