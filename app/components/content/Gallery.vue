@@ -21,7 +21,6 @@ onMounted(() => {
 });
 
 const hasError = ref<boolean>(false);
-
 </script>
 
 <template>
@@ -38,7 +37,14 @@ const hasError = ref<boolean>(false);
         :title="alts[i]"
         :data-caption="alts[i]"
       >
+        <img
+          v-if="src.includes('.gif')"
+          :src="src"
+          :alt="alts[i]"
+          class="w-full h-full object-cover rounded-md my-0"
+        />
         <nuxt-img
+          v-else
           :src="src"
           :alt="alts[i]"
           class="w-full h-full object-cover rounded-md my-0"
