@@ -15,6 +15,8 @@ link: https://discord.com/oauth2/authorize?client_id=1121418492097343589&permiss
 image: /image/purple-thing.jpg
 ---
 
+# Бот для Discord
+
 ## Введение
 
 Это мой первый серьезный проект на Node.js без учебы в качестве бэкенд-разработчика. Я создал бота для частного сервера Discord, предназначенного для общения и ролевых игр.

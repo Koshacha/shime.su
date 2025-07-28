@@ -1,4 +1,5 @@
 ---
+title: Cryptocurrency Exchanger
 description: A cryptocurrency buying and exchanging app created with React.js and Socket.IO.
 year: 2023
 sort: 5
@@ -8,11 +9,11 @@ tags:
 seoDescription: Cryptocurrency exchanger project featuring React.js, React
   Router, TypeScript, Socket.IO, and Docker for efficient exchange operations.
 color: "#5077FF"
-icon: doodles:sphere
-layout: project
 link: https://deswop.com
 image: /image/money.jpg
 ---
+
+# Cryptocurrency Exchanger
 
 ## Introduction
 

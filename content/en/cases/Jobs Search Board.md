@@ -1,4 +1,5 @@
 ---
+title: Jobs Search Board
 description: Jobs search board website, involving Next.js.
 seoDescription: Jobs search board project involving Next.js, PHP, and Rest API.
   Explored GetResponse, SendGrid, and GoHighLevel for enhanced digital mailing
@@ -9,12 +10,12 @@ published: true
 tags:
   - React.js
   - Backend
-layout: project
-icon: doodles:star-2
 color: "#8A46FF"
 link: https://jobsandneeds.com
 image: /image/pagan.jpg
 ---
+
+# Jobs Search Board
 
 ## Introduction
 

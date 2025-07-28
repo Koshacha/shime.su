@@ -1,4 +1,5 @@
 ---
+title: Fuel Card Website
 description: A corporate website for a fuel card company created using Bootstrap
   and CMS Wordpress.
 seoDescription: A corporate website for a fuel card company created using
@@ -14,6 +15,8 @@ layout: project
 link: https://tver-karta.ru/
 image: /image/maria.jpg
 ---
+
+# Fuel Card Website
 
 ## Links
 

@@ -1,4 +1,5 @@
 ---
+title: Phone DB Explorer
 description: An React.js SPA CRUD, for a MySQL phone database.
 seoDescription: An React.js SPA, which could be used to explore MySQL phone
   number database, make edits to it - for example, mark numbers as viewed and so
@@ -7,13 +8,14 @@ year: 2020
 sort: 1
 layout: project
 published: true
-icon: doodles:flower
 color: "#9A4574"
 tags:
   - React.js
 link: "https://github.com/koshacha/database-reader"
 image: /image/the-cleveland.jpg
 ---
+
+# Phone DB Explorer
 
 ## Introduction
 

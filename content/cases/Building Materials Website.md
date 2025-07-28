@@ -16,6 +16,8 @@ link: https://stroymarket23.ru/
 image: /image/angele.jpg
 ---
 
+# Сайт магазина строительных материалов
+
 ## Введение
 
 - Мой бойлерплейт репозиторий с Gulp.js, который я использовал для разработки: [github.com/koshacha/gulp-boilerplate](https://github.com/koshacha/gulp-boilerplate)

@@ -1,4 +1,5 @@
 ---
+title: Energy Supply Company Website
 description: A corporate website for an energy supply company, created with
   Bootstrap and CMS 1C-Bitrix.
 seoDescription: A corporate website for an energy supply company, created with
@@ -14,6 +15,8 @@ tags:
 link: https://www.noviten.ru/
 image: /image/blue-flyid.jpg
 ---
+
+# Energy Supply Company Website
 
 ## Links
 

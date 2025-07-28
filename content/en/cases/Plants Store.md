@@ -12,6 +12,8 @@ image: /image/herb.jpg
 color: #156963
 ---
 
+# Plants Store Website
+
 ## Links
 
 - [Demo](https://vue-plant-store.vercel.app/) 

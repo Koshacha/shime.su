@@ -1,4 +1,5 @@
 ---
+title: Building Materials Website
 description: A corporate website with catalog for a building materials store,
   created with Bootstrap and CMS 1C-Bitrix.
 seoDescription: A corporate website with catalog for a building materials store,
@@ -8,12 +9,11 @@ sort: 1
 tags:
   - CMS
 published: true
-icon: doodles:floor
 color: "#FF4746"
-layout: project
-link: https://stroymarket23.ru/
 image: /image/angele.jpg
 ---
+
+# Building Materials Website
 
 ## Introduction
 

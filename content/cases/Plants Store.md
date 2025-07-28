@@ -12,6 +12,8 @@ image: /image/herb.jpg
 color: #156963
 ---
 
+# Сайт магазина растений
+
 ## Ссылки
 
 - [Демо проекта](https://vue-plant-store.vercel.app/) 

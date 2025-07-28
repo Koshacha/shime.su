@@ -1,4 +1,5 @@
 ---
+title: Discord Bot
 description: The bot for a private Discord server dedicated to communication and
   roleplay. Written with Nest.js.
 seoDescription: Discord bot project with Node.js, Nest.js, Google Firebase, and Docker.
@@ -13,6 +14,8 @@ layout: project
 link: https://discord.com/oauth2/authorize?client_id=1121418492097343589&permissions=275012176976&scope=bot
 image: /image/purple-thing.jpg
 ---
+
+# Discord Bot
 
 ## Introduction
 

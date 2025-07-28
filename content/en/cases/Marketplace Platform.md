@@ -1,4 +1,5 @@
 ---
+title: Marketplace
 description: Marketplace platform leveraging Next.js
 seoDescription: Marketplace platform leveraging Next.js, RTK Query, WebSocket,
   Google Firebase Authentication, and Docker for seamless user experience.
@@ -13,6 +14,8 @@ color: "#FF6110"
 link: https://anvost.com
 image: /image/nick.jpg
 ---
+
+# Marketplace
 
 ## Introduction
 
