@@ -3,7 +3,6 @@ import { ref, onMounted, onUnmounted } from "vue";
 import { motion } from "motion-v";
 import { onClickOutside } from "@vueuse/core";
 import { useTemplateRef } from "vue";
-import ResumeButton from "./ResumeButton.vue";
 
 const isScrolled = ref(false);
 const isMobileMenuOpen = ref(false);
@@ -27,9 +26,10 @@ onClickOutside(target, () => (isMobileMenuOpen.value = false));
 
 <template>
   <nav
+    ref="target"
     :class="[
       'fixed w-full z-50 transition-all duration-300 px-6 md:px-12 py-4',
-      isScrolled ? 'bg-primary/95 backdrop-blur-sm' : 'bg-transparent',
+      isScrolled ? 'bg-neutral-900/95 backdrop-blur-sm' : 'bg-transparent',
     ]"
   >
     <div class="container mx-auto flex items-center justify-between">
@@ -48,7 +48,7 @@ onClickOutside(target, () => (isMobileMenuOpen.value = false));
 
         <lazy-logo-tooltip v-if="showLogoTooltip" />
 
-        <navigation />
+        <lazy-navigation hydrate-on-visible />
       </div>
 
       <!-- Mobile Logo -->
@@ -63,10 +63,9 @@ onClickOutside(target, () => (isMobileMenuOpen.value = false));
           <lazy-theme-switcher />
         </client-only> -->
 
-        <!-- Language Dropdown -->
-        <language-swither />
+        <lazy-language-swither hydrate-on-visible />
 
-        <resume-button />
+        <resume-button class="max-md:hidden" />
 
         <!-- Mobile menu button -->
         <the-button
@@ -75,7 +74,10 @@ onClickOutside(target, () => (isMobileMenuOpen.value = false));
           @click="isMobileMenuOpen = !isMobileMenuOpen"
         >
           <span class="sr-only">Menu</span>
-          <icon name="lucide:menu" class="size-5" />
+          <icon
+            :name="isMobileMenuOpen ? 'lucide:x' : 'lucide:menu'"
+            class="size-5"
+          />
         </the-button>
       </div>
     </div>
@@ -89,11 +91,10 @@ onClickOutside(target, () => (isMobileMenuOpen.value = false));
       :exit="{ opacity: 0 }"
     >
       <motion.div
-        ref="target"
         class="fixed top-0 left-0 w-full bg-primary/95 py-4 border-t border-accent/10 shadow-xl"
-        :initial="{ y: -20, opacity: 0 }"
+        :initial="{ y: 0, opacity: 0 }"
         :animate="{ y: 0, opacity: 1 }"
-        :exit="{ y: -20, opacity: 0 }"
+        :exit="{ y: 0, opacity: 0 }"
       >
         <div class="container mx-auto px-6">
           <div class="flex flex-col space-y-4 mb-2">
@@ -103,9 +104,9 @@ onClickOutside(target, () => (isMobileMenuOpen.value = false));
               hydrate-on-media-query="(max-width: 768px)"
             />
           </div>
-          <the-button class="w-full justify-center" href="/resume.pdf">{{
-            $t("nav.resume")
-          }}</the-button>
+          <div>
+            <resume-button class="w-full justify-center" />
+          </div>
         </div>
       </motion.div>
     </motion.div>

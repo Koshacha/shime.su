@@ -12,10 +12,13 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
   ],
   devtools: { enabled: false },
-  future: {
-    compatibilityVersion: 4,
-  },
-  site: { url: "shime.su" },
+  site: { url: "shime.su", name: "Ilya Mazunin - Vue.js Developer" },
+  // fonts: {
+  //   defaults: {
+  //     weights: [400, 500, 600, 700, 800, 900],
+  //     styles: ["normal", "italic"],
+  //   },
+  // },
   app: {
     head: {
       meta: [
@@ -55,6 +58,7 @@ export default defineNuxtConfig({
   image: {
     format: ["webp", "avif", "jpeg", "jpg", "png"],
   },
+  css: ["~/assets/css/tailwind.css"],
   tailwindcss: {
     config: {
       content: [
@@ -76,6 +80,7 @@ export default defineNuxtConfig({
           },
           fontFamily: {
             sans: ["Inter", "system-ui", "sans-serif"],
+            neue: ["Neue Montreal", "Inter", "system-ui", "sans-serif"],
           },
           animation: {
             "fade-in": "fadeIn 0.5s ease-in-out",
@@ -109,8 +114,5 @@ export default defineNuxtConfig({
       },
     },
   },
-  compatibilityDate: "2024-04-03",
-  routeRules: {
-    "/**": { prerender: true },
-  },
+  compatibilityDate: "latest",
 });

@@ -54,8 +54,12 @@ body {
     @apply text-text-secondary;
   }
 
-  code {
+  code:has(pre) {
     @apply block max-w-full overflow-x-scroll;
+  }
+
+  code:not(:has(pre)) {
+    @apply border px-2 border-secondary bg-primary rounded-sm text-accent text-base whitespace-nowrap;
   }
 
   p a,

@@ -20,8 +20,12 @@ defineProps<{
         <nuxt-img
           :src="project.image"
           :alt="project.title"
-          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-          sizes="sm:100vw md:50vw lg:400px"
+          format="webp"
+          class="w-full h-full object-cover"
+          width="410"
+          height="192"
+          quality="90"
+          preload
         />
         <div
           class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"
