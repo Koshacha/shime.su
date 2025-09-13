@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { motion } from "motion-v";
+
+defineProps<{
+  text: string;
+}>();
 </script>
 
 <template>
@@ -9,12 +13,17 @@ import { motion } from "motion-v";
       class="relative flex flex-col flex-grow justify-center items-center px-6 pt-24 md:pt-0"
     >
       <div class="text-center max-w-5xl mx-auto my-12">
-        <div class="mb-4 animate-fade-in">
-          <div
-            class="text-text-secondary font-neue text-5xl max-sm:text-left max-sm:font-bold lg:text-6xl tracking-6 leading-tight lg:leading-snug text-balance"
-          >
-            <slot />
-          </div>
+        <div class="mb-4">
+          <BlurText
+            :text="text"
+            :delay="100"
+            class-name="text-text-secondary font-neue text-5xl max-sm:text-left max-sm:font-bold lg:text-6xl tracking-6 leading-tight lg:leading-snug text-balance md:justify-center"
+            animate-by="words"
+            direction="bottom"
+            :threshold="0.1"
+            root-margin="0px"
+            :step-duration="0.2"
+          />
         </div>
 
         <div
