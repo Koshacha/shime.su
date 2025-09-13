@@ -10,11 +10,13 @@ sort: 1
 published: true
 tags:
   - CMS
-color: black
-icon: doodles:round
 layout: project
 link: https://tver-karta.ru/
 image: /image/maria.jpg
+icons:
+  - devicon:wordpress
+  - devicon:bootstrap
+  - devicon:php
 ---
 
 # Сайт провайдера топливных карт
@@ -25,13 +27,16 @@ image: /image/maria.jpg
 
 ## Скриншоты
 
-::gallery
----
+## ::gallery
+
 alts:
+
 - Главная
 - Каталог топливных карт
-images:
+  images:
 - /image/cases/cards/card-1.jpg
 - /image/cases/cards/card-2.jpg
+
 ---
+
 ::

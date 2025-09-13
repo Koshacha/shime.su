@@ -20,6 +20,8 @@ export default defineContentConfig({
           seoDescription: z.string(),
           tags: z.array(z.string()),
           image: z.string(),
+          year: z.optional(z.string()),
+          icons: z.optional(z.array(z.string())),
         }),
       })
     ),

@@ -10,11 +10,14 @@ published: true
 seoDescription: Проект криптовалютного обменника с использованием React.js,
   React Router, TypeScript, Socket.IO и Docker для эффективных обменных
   операций.
-color: "#5077FF"
-icon: doodles:sphere
 layout: project
 link: https://deswop.com
 image: /image/money.jpg
+icons:
+  - devicon:react
+  - devicon:reactrouter
+  - devicon:socketio
+  - devicon:tailwindcss
 ---
 
 # Обменник криптовалюты
@@ -71,15 +74,18 @@ export interface ClientSocket extends Socket<ServerToClientEvents> {
 
 ## Скриншоты
 
-::gallery
----
+## ::gallery
+
 alts:
-  - Компонент для обмена валюты
-  - Страница оплаты
-  - Раздел преимуществ
-images:
+
+- Компонент для обмена валюты
+- Страница оплаты
+- Раздел преимуществ
+  images:
 - /image/cases/dswp/image-1.jpg
 - /image/cases/dswp/image-3.jpg
 - /image/cases/dswp/image-2.jpg
+
 ---
+
 ::

@@ -7,14 +7,14 @@ seoDescription: Приложение было создано с помощью E
   стилизации.
 year: 2020
 sort: 0
-tags:
-  - React.js
 published: true
-icon: doodles:shtuka
-color: black
 layout: project
 link: https://github.com/koshacha/domain-history-checker
 image: /image/belinda.jpg
+icons:
+  - devicon:electron
+  - devicon:jquery
+  - devicon:bootstrap
 ---
 
 # Приложение для просмотра истории домена

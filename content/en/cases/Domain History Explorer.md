@@ -5,13 +5,14 @@ seoDescription: The app was created using Electron, I used jQuery to add
   interactivity to the interface and Bootstrap was used for styling.
 year: 2020
 sort: 0
-tags:
-  - React.js
 published: true
-color: black
 layout: project
 link: https://github.com/koshacha/domain-history-checker
 image: /image/belinda.jpg
+icons:
+  - devicon:electron
+  - devicon:jquery
+  - devicon:bootstrap
 ---
 
 # Domain History Explorer

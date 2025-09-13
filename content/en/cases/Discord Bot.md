@@ -8,8 +8,9 @@ sort: 4
 tags:
   - Backend
 published: true
-color: "#F7BFBE"
-icon: doodles:star
+icons:
+  - devicon:nestjs
+  - devicon:googlecloud
 layout: project
 link: https://discord.com/oauth2/authorize?client_id=1121418492097343589&permissions=275012176976&scope=bot
 image: /image/purple-thing.jpg
@@ -47,27 +48,33 @@ In the course of work I got to know Nest.js and Discord.js better, gained experi
 
 ## Screenshots
 
-::gallery
----
+## ::gallery
+
 class: columns-1
 alts:
+
 - Guild members rating
-images:
+  images:
 - /image/cases/paimon/rating.gif
+
 ---
+
 ::
 
-::gallery
----
+## ::gallery
+
 alts:
+
 - Skillcheck
 - Rating output, if we do not have enough messages on server
 - Commands menu
-images:
+  images:
 - /image/cases/paimon/image-2.jpg
 - /image/cases/paimon/image-3.jpg
 - /image/cases/paimon/image-1.jpg
+
 ---
+
 ::
 
 ## Launch the bot using docker compose

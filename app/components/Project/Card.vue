@@ -6,6 +6,8 @@ defineProps<{
     title: string;
     description: string;
     tags: string[];
+    year?: string;
+    icons?: string[];
   };
   index: number;
 }>();
@@ -40,8 +42,24 @@ const imageLoaded = ref(false);
           preload
           @load="imageLoaded = true"
         />
+
+        <div class="absolute top-4 right-4 flex items-center space-x-1">
+          <span
+            v-for="icon in project.icons"
+            :key="icon"
+            class="bg-secondary rounded-full size-5.5 p-1.5 flex items-center justify-center"
+          >
+            <icon :name="icon" class="size-4" />
+          </span>
+
+          <span
+            v-if="project.year"
+            class="text-base bg-secondary rounded-full px-3 py-0.5 font-bold font-neue"
+            >{{ project.year }}</span
+          >
+        </div>
         <div
-          class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"
+          class="absolute inset-0 bg-gradient-to-t from-primary/80 to-primary/10 group-hover:opacity-70 transition-opacity duration-300"
         ></div>
       </nuxt-link-locale>
     </div>

@@ -9,10 +9,14 @@ tags:
   - React.js
 layout: project
 published: true
-icon: doodles:cross
-color: "#FF6110"
 link: https://anvost.com
 image: /image/nick.jpg
+icons:
+  - devicon:nextjs
+  - devicon:react
+  - devicon:redux
+  - devicon:socketio
+  - devicon:tailwindcss
 ---
 
 # Marketplace

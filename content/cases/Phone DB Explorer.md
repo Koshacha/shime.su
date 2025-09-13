@@ -10,10 +10,12 @@ tags:
   - React.js
 layout: project
 published: true
-icon: doodles:flower
-color: "#9A4574"
 link: https://github.com/koshacha/database-reader
 image: /image/the-cleveland.jpg
+icons:
+  - devicon:react
+  - devicon:mysql
+  - devicon:bootstrap
 ---
 
 # Проводник для телефонной базы

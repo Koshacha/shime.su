@@ -9,11 +9,12 @@ tags:
 year: 2020
 sort: 1
 published: true
-icon: doodles:floor
-color: "#FF4746"
 layout: project
 link: https://stroymarket23.ru/
 image: /image/angele.jpg
+icons:
+  - devicon:bootstrap
+  - devicon:php
 ---
 
 # Сайт магазина строительных материалов
@@ -33,27 +34,33 @@ image: /image/angele.jpg
 
 ## Скриншоты
 
-::gallery
----
+## ::gallery
+
 alts:
-  - Хедер на главной
-images:
-  - /image/cases/stroymarket/stroymarket-2.jpg
-class: columns-1
+
+- Хедер на главной
+  images:
+- /image/cases/stroymarket/stroymarket-2.jpg
+  class: columns-1
+
 ---
+
 ::
 
-::gallery
----
+## ::gallery
+
 alts:
-  - Страница новостей, мобильная
-  - Категории в каталоге
-  - Категории в каталоге (моб.)
-  - Каталог
-images:
-  - /image/cases/stroymarket/stroymarket-1.jpg
-  - /image/cases/stroymarket/stroymarket-3.jpg
-  - /image/cases/stroymarket/stroymarket-4.jpg
-  - /image/cases/stroymarket/stroymarket-5.jpg
+
+- Страница новостей, мобильная
+- Категории в каталоге
+- Категории в каталоге (моб.)
+- Каталог
+  images:
+- /image/cases/stroymarket/stroymarket-1.jpg
+- /image/cases/stroymarket/stroymarket-3.jpg
+- /image/cases/stroymarket/stroymarket-4.jpg
+- /image/cases/stroymarket/stroymarket-5.jpg
+
 ---
+
 ::

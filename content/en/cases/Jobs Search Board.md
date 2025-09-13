@@ -13,6 +13,11 @@ tags:
 color: "#8A46FF"
 link: https://jobsandneeds.com
 image: /image/pagan.jpg
+icons:
+  - devicon:nextjs
+  - devicon:react
+  - devicon:php
+  - devicon:tailwindcss
 ---
 
 # Jobs Search Board

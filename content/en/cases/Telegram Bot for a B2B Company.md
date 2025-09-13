@@ -7,6 +7,9 @@ sort: 2
 layout: project
 tags:
   - Backend
+icons:
+  - devicon:nestjs
+  - devicon:docker
 published: true
 image: /image/tg-bot.jpg
 ---
@@ -35,14 +38,14 @@ For deployment, I set up containerization using **Docker** and **Docker Compose*
 
 The bot's architecture is built on modules, each responsible for its own logical part.
 
-| Module | Description |
-| --- | --- |
-| **Start** | Handles welcoming new users and basic navigation. |
-| **Info** | Provides general information about the company, services, and partners. |
-| **FAQ** | Implements a section with frequently asked questions for user self-service. |
-| **Support** | Contains an interactive wizard for creating technical support tickets. |
+| Module         | Description                                                                  |
+| -------------- | ---------------------------------------------------------------------------- |
+| **Start**      | Handles welcoming new users and basic navigation.                            |
+| **Info**       | Provides general information about the company, services, and partners.      |
+| **FAQ**        | Implements a section with frequently asked questions for user self-service.  |
+| **Support**    | Contains an interactive wizard for creating technical support tickets.       |
 | **Khabarovsk** | A region-specific module with a wizard for submitting verification requests. |
-| **Admin** | Functionality for bot administrators (e.g., broadcasts or user management). |
+| **Admin**      | Functionality for bot administrators (e.g., broadcasts or user management).  |
 
 ## Workflow
 

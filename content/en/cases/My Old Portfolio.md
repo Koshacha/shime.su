@@ -1,17 +1,15 @@
 ---
 title: Portfolio Website (Svelte)
 description: Website on Svelte using SSG and TypeScript, to show the world my portfolio and gained experience as a frontend developer.
-seoDescription: "Website on Svelte using SSG and TypeScript, to show the world my portfolio and gained experience as a frontend developer."
+seoDescription: Website on Svelte using SSG and TypeScript, to show the world my portfolio and gained experience as a frontend developer.
 year: 2023
 sort: 3
 layout: project
 published: true
-tags:
-  - Svelte
-icon: doodles:naruto
-color: "#5E9167"
-link: "https://leerob.io/"
 image: /image/pawel.jpg
+icons:
+  - devicon:svelte
+  - devicon:tailwindcss
 ---
 
 # Portfolio Website (Svelte)

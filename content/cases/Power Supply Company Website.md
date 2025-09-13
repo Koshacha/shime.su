@@ -10,10 +10,11 @@ layout: project
 tags:
   - CMS
 published: true
-icon: doodles:neft
-color: "#41BB85"
 link: https://www.noviten.ru/
 image: /image/blue-flyid.jpg
+icons:
+  - devicon:bootstrap
+  - devicon:php
 ---
 
 # Сайт энергосбытовой компании

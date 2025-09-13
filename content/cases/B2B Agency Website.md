@@ -6,9 +6,11 @@ year: 2025
 sort: 1
 layout: project
 tags:
-  - Nuxt
   - Vue.js
-  - Backend
+icons:
+  - devicon:nuxt
+  - devicon:vuejs
+  - devicon:tailwindcss
 published: true
 color: "#1A4EFF"
 image: /image/hhholographic.png

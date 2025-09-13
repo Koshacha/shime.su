@@ -8,8 +8,9 @@ tags:
 year: 2024
 sort: 4
 published: true
-color: "#F7BFBE"
-icon: doodles:star
+icons:
+  - devicon:nestjs
+  - devicon:googlecloud
 layout: project
 link: https://discord.com/oauth2/authorize?client_id=1121418492097343589&permissions=275012176976&scope=bot
 image: /image/purple-thing.jpg
@@ -47,27 +48,33 @@ image: /image/purple-thing.jpg
 
 ## Скриншоты
 
-::gallery
----
+## ::gallery
+
 class: columns-1
 alts:
+
 - Рейтинг участников сервера
-images:
+  images:
 - /image/cases/paimon/rating.gif
+
 ---
+
 ::
 
-::gallery
----
+## ::gallery
+
 alts:
+
 - Скиллчек
 - Вывод рейтинга, в случае малого количества сообщений
 - Меню команд бота
-images:
+  images:
 - /image/cases/paimon/image-2.jpg
 - /image/cases/paimon/image-3.jpg
 - /image/cases/paimon/image-1.jpg
+
 ---
+
 ::
 
 ## Запуск бота с помощью docker compose

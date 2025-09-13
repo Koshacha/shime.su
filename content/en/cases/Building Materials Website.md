@@ -9,8 +9,10 @@ sort: 1
 tags:
   - CMS
 published: true
-color: "#FF4746"
 image: /image/angele.jpg
+icons:
+  - devicon:bootstrap
+  - devicon:php
 ---
 
 # Building Materials Website

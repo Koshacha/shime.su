@@ -8,11 +8,14 @@ year: 2020
 sort: 1
 layout: project
 published: true
-color: "#9A4574"
 tags:
   - React.js
 link: "https://github.com/koshacha/database-reader"
 image: /image/the-cleveland.jpg
+icons:
+  - devicon:react
+  - devicon:mysql
+  - devicon:bootstrap
 ---
 
 # Phone DB Explorer

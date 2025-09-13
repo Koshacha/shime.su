@@ -6,12 +6,11 @@ year: 2025
 sort: 1
 layout: project
 tags:
-  - Nuxt
   - Vue.js
-  - Backend
+icons:
+  - devicon:nuxt
+  - devicon:tailwindcss
 published: true
-icon: ph:briefcase-duotone
-color: "#1A4EFF"
 link: https://anvoria.ru
 image: /image/hhholographic.png
 ---

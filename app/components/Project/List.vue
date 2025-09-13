@@ -10,22 +10,40 @@ const { data: projects } = await useAsyncData(`projects-${fullPath}`, () => {
   loc = loc.replace("/ru", "");
 
   return queryCollection("project")
-    .select("id", "title", "path", "tags", "description", "sort", "image")
+    .select(
+      "id",
+      "title",
+      "path",
+      "tags",
+      "description",
+      "sort",
+      "image",
+      "year",
+      "icons"
+    )
     .where("path", "LIKE", `${loc}/%`)
-    .order("sort", "DESC")
+    .order("year", "DESC")
     .all();
 });
 
 const { data: categories } = await useAsyncData(
   `categories-${fullPath}`,
   async () => {
+    const order = ["Vue.js", "React.js", "_", "CMS", "Backend"];
     const pages = await queryCollection("project")
       .select("tags")
       .where("published", "=", true)
       .where("tags", "IS NOT NULL")
       .all();
 
-    const distinctTags = new Set(pages.map((page) => page.tags).flat());
+    const tags = pages
+      .map((page) => page.tags)
+      .flat()
+      .sort((a, b) => {
+        return order.indexOf(a) - order.indexOf(b);
+      });
+
+    const distinctTags = new Set(tags);
 
     return ["", ...distinctTags];
   }

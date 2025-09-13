@@ -9,13 +9,15 @@ tags:
   - Vue.js
 published: true
 image: /image/herb.jpg
-color: #156963
+icons:
+  - devicon:vuejs
+  - devicon:tailwindcss
 ---
 
 # Plants Store Website
 
 ## Links
 
-- [Demo](https://vue-plant-store.vercel.app/) 
+- [Demo](https://vue-plant-store.vercel.app/)
 - Project repository: [github.com/koshacha/vue-plant-store](https://github.com/koshacha/vue-plant-store)
 - Starter-template, [vitesse-lite](https://github.com/antfu-collective/vitesse-lite) by antfu.

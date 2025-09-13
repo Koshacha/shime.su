@@ -1,18 +1,17 @@
 ---
 title: Сайт-портфолио
 description: Сайт на Svelte с использованием SSG и TypeScript.
-seoDescription: «Сайт на Svelte с использованием SSG и TypeScript, чтобы
+seoDescription: Сайт на Svelte с использованием SSG и TypeScript, чтобы
   показать миру мое портфолио и накопленный опыт в качестве
-  фронтенд-разработчика».
+  фронтенд-разработчика.
 year: 2023
 sort: 3
 layout: project
-tags:
-  - Svelte
 published: true
-icon: doodles:naruto
-color: "#5E9167"
 image: /image/pawel.jpg
+icons:
+  - devicon:svelte
+  - devicon:tailwindcss
 ---
 
 # Сайт-портфолио (старый)

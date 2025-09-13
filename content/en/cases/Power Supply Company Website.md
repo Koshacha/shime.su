@@ -8,12 +8,13 @@ year: 2020
 sort: 1
 layout: project
 published: true
-icon: doodles:neft
-color: "#41BB85"
 tags:
   - CMS
 link: https://www.noviten.ru/
 image: /image/blue-flyid.jpg
+icons:
+  - devicon:bootstrap
+  - devicon:php
 ---
 
 # Energy Supply Company Website

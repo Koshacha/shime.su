@@ -11,10 +11,13 @@ tags:
   - React.js
   - Backend
 layout: project
-icon: doodles:star-2
-color: "#8A46FF"
 link: https://jobsandneeds.com
 image: /image/pagan.jpg
+icons:
+  - devicon:nextjs
+  - devicon:react
+  - devicon:php
+  - devicon:tailwindcss
 ---
 
 # Сайт для поиска работы
@@ -41,27 +44,33 @@ image: /image/pagan.jpg
 
 ## Скриншоты
 
-::gallery
----
+## ::gallery
+
 alts:
-  - Страница поиска вакансий
-images:
-  - /image/cases/jobs/image-4.jpg
-class: columns-1
+
+- Страница поиска вакансий
+  images:
+- /image/cases/jobs/image-4.jpg
+  class: columns-1
+
 ---
+
 ::
 
-::gallery
----
+## ::gallery
+
 alts:
-  - Страница "О нас"
-  - Главная страница
-  - Ввод запроса на главной странице
-  - Мобильная
-images:
-  - /image/cases/jobs/image-1.jpg
-  - /image/cases/jobs/image-3.jpg
-  - /image/cases/jobs/image-2.jpg
-  - /image/cases/jobs/image-5.jpg
+
+- Страница "О нас"
+- Главная страница
+- Ввод запроса на главной странице
+- Мобильная
+  images:
+- /image/cases/jobs/image-1.jpg
+- /image/cases/jobs/image-3.jpg
+- /image/cases/jobs/image-2.jpg
+- /image/cases/jobs/image-5.jpg
+
 ---
+
 ::

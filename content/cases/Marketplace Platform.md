@@ -10,10 +10,14 @@ layout: project
 tags:
   - React.js
 published: true
-icon: doodles:cross
-color: "#FF6110"
 link: https://anvost.com
 image: /image/nick.jpg
+icons:
+  - devicon:nextjs
+  - devicon:react
+  - devicon:redux
+  - devicon:socketio
+  - devicon:tailwindcss
 ---
 
 # Маркетплейс
@@ -40,22 +44,24 @@ image: /image/nick.jpg
 
 ## Скриншоты
 
-::gallery
----
-alts:
-  - Лендинг
-  - Список магазинов
-  - Страница настроек
-  - Детальная страница магазина
-  - Лендинг
-  - Страница платного продвижения на платформе
-images:
-  - /image/cases/nvst/image-2.jpg
-  - /image/cases/nvst/image-5.jpg
-  - /image/cases/nvst/image-1.jpg
-  - /image/cases/nvst/image-4.jpg
-  - /image/cases/nvst/image-3.jpg
-  - /image/cases/nvst/image-6.jpg
----
-::
+## ::gallery
 
+alts:
+
+- Лендинг
+- Список магазинов
+- Страница настроек
+- Детальная страница магазина
+- Лендинг
+- Страница платного продвижения на платформе
+  images:
+- /image/cases/nvst/image-2.jpg
+- /image/cases/nvst/image-5.jpg
+- /image/cases/nvst/image-1.jpg
+- /image/cases/nvst/image-4.jpg
+- /image/cases/nvst/image-3.jpg
+- /image/cases/nvst/image-6.jpg
+
+---
+
+::

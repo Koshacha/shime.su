@@ -7,13 +7,15 @@ seoDescription: A corporate website for a fuel card company created using
 year: 2020
 sort: 1
 published: true
-color: black
 tags:
   - CMS
-icon: doodles:round
 layout: project
 link: https://tver-karta.ru/
 image: /image/maria.jpg
+icons:
+  - devicon:wordpress
+  - devicon:bootstrap
+  - devicon:php
 ---
 
 # Fuel Card Website
@@ -24,13 +26,16 @@ image: /image/maria.jpg
 
 ## Screenshots
 
-::gallery
----
+## ::gallery
+
 alts:
-  - Main page
-  - Cards catalog
-images:
-  - /image/cases/cards/card-1.jpg
-  - /image/cases/cards/card-2.jpg
+
+- Main page
+- Cards catalog
+  images:
+- /image/cases/cards/card-1.jpg
+- /image/cases/cards/card-2.jpg
+
 ---
+
 ::
