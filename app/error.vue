@@ -2,7 +2,7 @@
   <nuxt-layout name="error">
     <div class="flex items-center justify-center px-6 pt-24 md:pt-0">
       <div class="text-center">
-        <h1 class="text-8xl font-bold text-accent mb-4">
+        <h1 class="font-neue text-8xl font-bold text-accent mb-4">
           {{ error.statusCode }}
         </h1>
         <div class="text-6xl font-semibold text-text-primary mb-6">

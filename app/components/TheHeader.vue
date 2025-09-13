@@ -101,7 +101,6 @@ onClickOutside(target, () => (isMobileMenuOpen.value = false));
             <lazy-navigation
               is-mobile
               @changed="isMobileMenuOpen = false"
-              hydrate-on-media-query="(max-width: 768px)"
             />
           </div>
           <div>

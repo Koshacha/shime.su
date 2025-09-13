@@ -3,15 +3,15 @@ import { motion } from "motion-v";
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col justify-center">
+  <div class="min-h-[100dvh] flex flex-col justify-center">
     <motion.div
       layout
       class="relative flex flex-col flex-grow justify-center items-center px-6 pt-24 md:pt-0"
     >
-      <div class="text-center max-w-3xl mx-auto my-12">
+      <div class="text-center max-w-5xl mx-auto my-12">
         <div class="mb-4 animate-fade-in">
           <div
-            class="text-text-secondary text-4xl font-medium tracking-4 leading-relaxed"
+            class="text-text-secondary font-neue text-5xl max-sm:text-left max-sm:font-bold lg:text-6xl tracking-6 leading-tight lg:leading-snug text-balance"
           >
             <slot />
           </div>

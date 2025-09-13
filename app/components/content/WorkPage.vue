@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { motion } from "motion-v";
-
 interface WorkExperience {
   id: number;
   period: string;
@@ -12,7 +10,7 @@ interface WorkExperience {
 
 <template>
   <div class="">
-    <h1 class="text-3xl font-semibold mb-12 text-text-primary">
+    <h1 class="font-neue text-4xl font-bold mb-12 text-text-primary">
       {{ $t("work.title") }}
     </h1>
 

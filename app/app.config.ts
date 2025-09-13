@@ -5,7 +5,7 @@ export default defineAppConfig({
   },
 
   app: {
-    updateDate: "29.7.2025",
+    updateDate: "12.9.2025",
   },
 
   contacts: {

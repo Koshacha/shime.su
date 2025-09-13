@@ -49,7 +49,6 @@ And here are the outgoing messages. They are more complicated, because from the 
 
 I wrote the following code, which completely covered my needs in this typing and works just perfectly.
 
-::prose-code
 ```ts
 interface ServerToClientEvents {
   ticker: (
@@ -65,7 +64,6 @@ export interface ClientSocket extends Socket<ServerToClientEvents> {
   emit(event: "order", type: "rate", dto: OrderRateDto): this;
 }
 ```
-::
 
 ## Screenshots
 

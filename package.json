@@ -12,7 +12,9 @@
   "dependencies": {
     "@fancyapps/ui": "^6.0.30",
     "@nuxt/content": "^3.6.3",
+    "@nuxt/fonts": "0.11.4",
     "@nuxt/image": "1.11.0",
+    "@nuxtjs/robots": "5.5.1",
     "@nuxtjs/sitemap": "7.4.3",
     "@vueuse/core": "^13.9.0",
     "motion-v": "^1.7.1",

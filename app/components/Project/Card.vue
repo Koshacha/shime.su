@@ -9,6 +9,8 @@ defineProps<{
   };
   index: number;
 }>();
+
+const imageLoaded = ref(false);
 </script>
 
 <template>
@@ -18,14 +20,25 @@ defineProps<{
     <div v-if="project.image" class="relative h-48 overflow-hidden">
       <nuxt-link-locale :to="project.path">
         <nuxt-img
+          v-if="!imageLoaded"
           :src="project.image"
           :alt="project.title"
           format="webp"
-          class="w-full h-full object-cover"
+          class="absolute inset-0 w-full h-full object-cover blur-xl"
+          width="1"
+          height="1"
+          quality="10"
+        />
+        <nuxt-img
+          :src="project.image"
+          :alt="project.title"
+          format="webp"
+          class="relative w-full h-full object-cover"
           width="410"
           height="192"
           quality="90"
           preload
+          @load="imageLoaded = true"
         />
         <div
           class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"
@@ -36,11 +49,11 @@ defineProps<{
     <div class="p-4">
       <nuxt-link-locale
         :to="project.path"
-        class="text-lg font-semibold text-text-primary mb-1 block"
+        class="font-neue text-lg font-bold text-text-primary mb-1 block"
       >
         {{ project.title }}
       </nuxt-link-locale>
-      <div class="text-text-secondary text-sm">
+      <div class="text-text-secondary text-base">
         {{ project.description }}
       </div>
     </div>

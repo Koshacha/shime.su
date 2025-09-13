@@ -14,6 +14,9 @@ const layout = computed(() => {
   switch (true) {
     case route.path === "/" || route.path === "/ru" || route.path === "/en":
       return "main";
+    case (route.path.startsWith("/cases") && route.path !== "/cases") ||
+      (route.path.startsWith("/en/cases") && route.path !== "/en/cases"):
+      return "content";
     default:
       return "default";
   }

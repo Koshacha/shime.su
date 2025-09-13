@@ -10,14 +10,9 @@
   --text-secondary: #a0a0a0;
 }
 
-html {
-  font-family: Inter, sans-serif;
-}
-
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
   color: var(--text-primary);
   background-color: var(--primary);
   line-height: 1.5;
@@ -35,11 +30,11 @@ body {
   }
 
   h1 {
-    @apply text-3xl font-semibold mb-12 text-text-primary;
+    @apply font-neue text-4xl font-bold mb-12 text-text-primary;
   }
 
   h2 {
-    @apply text-2xl font-semibold mb-6 text-text-primary;
+    @apply font-neue text-xl font-bold mb-6 text-text-primary;
   }
 
   p {
@@ -54,16 +49,36 @@ body {
     @apply text-text-secondary;
   }
 
-  code:has(pre) {
-    @apply block max-w-full overflow-x-scroll;
+  pre code {
+    @apply block border p-2 max-w-full overflow-x-scroll border-secondary bg-primary rounded-sm;
   }
 
-  code:not(:has(pre)) {
+  :not(:is(pre)) > code {
     @apply border px-2 border-secondary bg-primary rounded-sm text-accent text-base whitespace-nowrap;
   }
 
   p a,
   li a {
     @apply text-accent font-medium underline underline-offset-4 hover:decoration-2 hover:decoration-[var(--main-color)];
+  }
+
+  table {
+    @apply w-full border-collapse text-left;
+  }
+
+  thead {
+    @apply bg-secondary;
+  }
+
+  tbody tr:nth-of-type(even) {
+    @apply bg-secondary/50;
+  }
+
+  th {
+    @apply p-4 font-semibold border border-secondary;
+  }
+
+  td {
+    @apply p-4 border border-secondary;
   }
 }

@@ -53,8 +53,6 @@ image: /image/money.jpg
 
 Я написал следующий код, который полностью покрыл мои потребности в данной типизации и работает просто идеально.
 
-::prose-code
-
 ```ts
 interface ServerToClientEvents {
   ticker: (
@@ -70,8 +68,6 @@ export interface ClientSocket extends Socket<ServerToClientEvents> {
   emit(event: "order", type: "rate", dto: OrderRateDto): this;
 }
 ```
-
-::
 
 ## Скриншоты
 

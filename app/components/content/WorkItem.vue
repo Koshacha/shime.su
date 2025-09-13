@@ -13,21 +13,18 @@ defineProps<WorkExperience>();
 </script>
 
 <template>
-  <motion.div
+  <div
     :key="id"
     class="relative"
-    :initial="{ opacity: 0, y: 20 }"
-    :animate="{ opacity: 1, y: 0 }"
-    :delay="id * 1000"
   >
     <div class="mb-4">
       <span class="text-accent font-medium">{{ period }}</span>
     </div>
 
-    <h3 class="text-2xl font-semibold mb-1 text-text-primary">
+    <h3 class="text-2xl font-bold font-neue mb-1 text-text-primary">
       {{ company }}
     </h3>
-    <p class="text-xl text-text-secondary mb-2">
+    <p class="text-xl font-neue text-text-secondary mb-2">
       {{ position }}
     </p>
 
@@ -44,5 +41,5 @@ defineProps<WorkExperience>();
         {{ item }}
       </li>
     </ul>
-  </motion.div>
+  </div>
 </template>

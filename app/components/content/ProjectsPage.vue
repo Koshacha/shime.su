@@ -2,7 +2,7 @@
 
 <template>
   <div class="mx-auto">
-    <h1 class="text-3xl font-semibold mb-8 text-text-primary">
+    <h1 class="font-neue text-4xl font-bold mb-12 text-text-primary">
       {{ $t("projects.title") }}
     </h1>
 

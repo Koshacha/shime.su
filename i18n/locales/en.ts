@@ -3,7 +3,7 @@ export default {
   nav: {
     home: "Home",
     cases: "Projects",
-    work: "Work",
+    work: "Experience",
     me: "Profile",
     resume: "Download CV",
   },
@@ -25,7 +25,7 @@ export default {
     elsewhere: "Elsewhere",
   },
   work: {
-    title: "Background",
+    title: "Experience",
   },
   logo: {
     verb: "Verb",

@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   ssr: true,
   modules: [
-    "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
     "motion-v/nuxt",
@@ -10,6 +9,9 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
     "@nuxtjs/sitemap",
+    "@nuxt/content",
+    "@nuxt/fonts",
+    "@nuxtjs/robots",
   ],
   devtools: { enabled: false },
   site: { url: "shime.su", name: "Ilya Mazunin - Vue.js Developer" },
@@ -28,7 +30,7 @@ export default defineNuxtConfig({
         },
       ],
       bodyAttrs: {
-        class: "bg-neutral-900",
+        class: "bg-neutral-900 font-inter",
       },
       script: [
         {
@@ -46,11 +48,13 @@ export default defineNuxtConfig({
       {
         code: "en",
         name: "English",
+        language: "en-US",
         file: "en.ts",
       },
       {
         code: "ru",
         name: "Русский",
+        language: "ru-RU",
         file: "ru.ts",
       },
     ],
@@ -80,7 +84,7 @@ export default defineNuxtConfig({
           },
           fontFamily: {
             sans: ["Inter", "system-ui", "sans-serif"],
-            neue: ["Neue Montreal", "Inter", "system-ui", "sans-serif"],
+            neue: ["Neue Montreal", "system-ui", "sans-serif"],
           },
           animation: {
             "fade-in": "fadeIn 0.5s ease-in-out",
