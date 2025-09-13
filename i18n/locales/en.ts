@@ -6,6 +6,7 @@ export default {
     experience: "Experience",
     me: "Profile",
     resume: "Download CV",
+    posts: "Posts",
   },
   footer: {
     "back-to-top": "Back to top",
@@ -31,5 +32,9 @@ export default {
     verb: "Verb",
     first: "To indicate; to show; to demonstrate",
     second: "To reveal; to display.",
+  },
+  posts: {
+    title: "Posts",
+    empty: "No posts yet",
   },
 };
