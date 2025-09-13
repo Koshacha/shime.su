@@ -10,6 +10,7 @@ tags:
 published: true
 icons:
   - devicon:nestjs
+  - devicon:typescript
   - devicon:googlecloud
 layout: project
 link: https://discord.com/oauth2/authorize?client_id=1121418492097343589&permissions=275012176976&scope=bot

@@ -9,6 +9,8 @@ tags:
   - Vue.js
 icons:
   - devicon:nuxt
+  - devicon:vuejs
+  - devicon:typescript
   - devicon:tailwindcss
 published: true
 link: https://anvoria.ru

@@ -11,6 +11,7 @@ published: true
 image: /image/herb.jpg
 icons:
   - devicon:vuejs
+  - devicon:typescript
   - devicon:tailwindcss
 ---
 

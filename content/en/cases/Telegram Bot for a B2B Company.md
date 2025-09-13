@@ -9,6 +9,7 @@ tags:
   - Backend
 icons:
   - devicon:nestjs
+  - devicon:typescript
   - devicon:docker
 published: true
 image: /image/tg-bot.jpg

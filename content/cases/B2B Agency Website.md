@@ -10,6 +10,7 @@ tags:
 icons:
   - devicon:nuxt
   - devicon:vuejs
+  - devicon:typescript
   - devicon:tailwindcss
 published: true
 color: "#1A4EFF"

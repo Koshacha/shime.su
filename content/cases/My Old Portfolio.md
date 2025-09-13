@@ -11,6 +11,7 @@ published: true
 image: /image/pawel.jpg
 icons:
   - devicon:svelte
+  - devicon:typescript
   - devicon:tailwindcss
 ---
 

@@ -16,7 +16,7 @@ image: /image/money.jpg
 icons:
   - devicon:react
   - devicon:reactrouter
-  - devicon:socketio
+  - devicon:typescript
   - devicon:tailwindcss
 ---
 

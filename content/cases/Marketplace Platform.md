@@ -11,7 +11,7 @@ tags:
   - React.js
 published: true
 link: https://anvost.com
-image: /image/nick.jpg
+image: /image/logan-voss.jpg
 icons:
   - devicon:nextjs
   - devicon:react
