@@ -3,7 +3,7 @@ export default {
   nav: {
     home: "Home",
     cases: "Projects",
-    work: "Experience",
+    experience: "Experience",
     me: "Profile",
     resume: "Download CV",
   },

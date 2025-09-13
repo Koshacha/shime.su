@@ -3,7 +3,7 @@ export default {
   nav: {
     home: "Главная",
     cases: "Проекты",
-    work: "Работа",
+    experience: "Работа",
     me: "Обо мне",
     resume: "Скачать резюме",
   },
