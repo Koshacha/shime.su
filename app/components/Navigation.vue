@@ -3,9 +3,7 @@ import { motion } from "motion-v";
 
 const route = useRoute();
 
-const { data } = await useAsyncData("navigation", () => {
-  return queryCollectionNavigation("content").where("path", "NOT LIKE", "/en%");
-});
+const { data } = await useFetch("/api/navigation");
 
 defineProps<{
   isMobile?: boolean;

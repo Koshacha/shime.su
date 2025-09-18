@@ -1,64 +1,31 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const { locale } = useI18n();
-const { fullPath } = useRoute();
+const { data: projects } = await useFetch("/api/projects");
 
-const { data: projects } = await useAsyncData(`projects-${fullPath}`, () => {
-  let loc = `/${locale.value}/cases`;
+const tags = computed(() => {
+  const order = ["Vue.js", "React.js", "_", "CMS", "Backend"];
 
-  loc = loc.replace("/ru", "");
+  const tags = projects.value
+    .map((page) => page.tags)
+    .flat()
+    .sort((a, b) => {
+      return order.indexOf(a) - order.indexOf(b);
+    });
 
-  return queryCollection("project")
-    .select(
-      "id",
-      "title",
-      "path",
-      "tags",
-      "description",
-      "sort",
-      "image",
-      "year",
-      "icons"
-    )
-    .where("path", "LIKE", `${loc}/%`)
-    .order("year", "DESC")
-    .all();
+  const distinctTags = new Set(tags);
+  return [...distinctTags];
 });
 
-const { data: categories } = await useAsyncData(
-  `categories-${fullPath}`,
-  async () => {
-    const order = ["Vue.js", "React.js", "_", "CMS", "Backend"];
-    const pages = await queryCollection("project")
-      .select("tags")
-      .where("published", "=", true)
-      .where("tags", "IS NOT NULL")
-      .all();
+const currentTag = ref("");
 
-    const tags = pages
-      .map((page) => page.tags)
-      .flat()
-      .sort((a, b) => {
-        return order.indexOf(a) - order.indexOf(b);
-      });
-
-    const distinctTags = new Set(tags);
-
-    return ["", ...distinctTags];
-  }
-);
-
-const activeCategory = ref("");
-
-const filteredProjects = computed(() => {
+const filtered = computed(() => {
   if (!projects.value) return [];
-  if (activeCategory.value === "") return projects.value;
+  if (currentTag.value === "") return projects.value;
   return projects.value.filter((project) => {
     if ("tags" in project && Array.isArray(project?.tags)) {
-      return project.tags.includes(activeCategory.value);
+      return project.tags.includes(currentTag.value);
     }
-
     return false;
   });
 });
@@ -66,12 +33,12 @@ const filteredProjects = computed(() => {
 
 <template>
   <div class="mb-8 overflow-x-auto whitespace-nowrap pb-2">
-    <project-filter :categories="categories ?? []" v-model="activeCategory" />
+    <project-filter :categories="tags ?? []" v-model="currentTag" />
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <project-card
-      v-for="(project, index) in filteredProjects"
+      v-for="(project, index) in filtered"
       :key="project.id"
       :project="project"
       :index="index"

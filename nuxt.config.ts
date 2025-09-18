@@ -15,12 +15,12 @@ export default defineNuxtConfig({
   ],
   devtools: { enabled: false },
   site: { url: "shime.su", name: "Ilya Mazunin - Vue.js Developer" },
-  // fonts: {
-  //   defaults: {
-  //     weights: [400, 500, 600, 700, 800, 900],
-  //     styles: ["normal", "italic"],
-  //   },
-  // },
+  fonts: {
+    defaults: {
+      weights: [400, 500, 600, 700, 800, 900],
+      styles: ["normal", "italic"],
+    },
+  },
   app: {
     head: {
       meta: [
@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         },
       ],
       bodyAttrs: {
-        class: "bg-neutral-900 font-inter",
+        class: "bg-neutral-900 font-neue",
       },
       script: [
         {
@@ -44,6 +44,10 @@ export default defineNuxtConfig({
   i18n: {
     strategy: "prefix_except_default",
     defaultLocale: "ru",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+    },
     locales: [
       {
         code: "en",
