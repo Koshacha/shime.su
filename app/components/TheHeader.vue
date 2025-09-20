@@ -67,47 +67,23 @@ onClickOutside(target, () => (isMobileMenuOpen.value = false));
 
         <resume-button class="max-md:hidden" />
 
-        <!-- Mobile menu button -->
-        <the-button
-          variant="secondary"
-          class="md:hidden p-2"
-          @click="isMobileMenuOpen = !isMobileMenuOpen"
-        >
-          <span class="sr-only">Menu</span>
-          <icon
-            :name="isMobileMenuOpen ? 'lucide:x' : 'lucide:menu'"
-            class="size-5"
-          />
-        </the-button>
+        <trigger>
+          <template #trigger="{ open, toggle }">
+            <the-button
+              variant="secondary"
+              class="md:hidden p-2"
+              @click="toggle()"
+            >
+              <span class="sr-only">Menu</span>
+              <icon :name="open ? 'lucide:x' : 'lucide:menu'" class="size-5" />
+            </the-button>
+          </template>
+
+          <template #default="{ close }">
+            <lazy-navigation @changed="close()" is-mobile />
+          </template>
+        </trigger>
       </div>
     </div>
-
-    <!-- Mobile menu -->
-    <motion.div
-      v-if="isMobileMenuOpen"
-      class="md:hidden fixed inset-0 top-[72px] z-20 bg-black/50 backdrop-blur-sm"
-      :initial="{ opacity: 0 }"
-      :animate="{ opacity: 1 }"
-      :exit="{ opacity: 0 }"
-    >
-      <motion.div
-        class="fixed top-0 left-0 w-full bg-primary/95 py-4 border-t border-accent/10 shadow-xl"
-        :initial="{ y: 0, opacity: 0 }"
-        :animate="{ y: 0, opacity: 1 }"
-        :exit="{ y: 0, opacity: 0 }"
-      >
-        <div class="container mx-auto px-6">
-          <div class="flex flex-col space-y-4 mb-2">
-            <lazy-navigation
-              is-mobile
-              @changed="isMobileMenuOpen = false"
-            />
-          </div>
-          <div>
-            <resume-button class="w-full justify-center" />
-          </div>
-        </div>
-      </motion.div>
-    </motion.div>
   </nav>
 </template>
