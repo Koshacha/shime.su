@@ -17,7 +17,10 @@ const tags = computed(() => {
   return [...distinctTags];
 });
 
-const currentTag = ref("");
+const { locale, defaultLocale } = useI18n();
+const { query } = useRoute();
+
+const currentTag = ref((query.tag as string) || "");
 
 const filtered = computed(() => {
   if (!projects.value) return [];
@@ -27,6 +30,13 @@ const filtered = computed(() => {
       return project.tags.includes(currentTag.value);
     }
     return false;
+  });
+});
+
+watch(currentTag, () => {
+  navigateTo({
+    path: locale.value === defaultLocale ? "/cases" : `/${locale.value}/cases`,
+    query: currentTag.value ? { tag: currentTag.value } : undefined,
   });
 });
 </script>

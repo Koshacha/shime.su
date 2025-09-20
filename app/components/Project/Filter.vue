@@ -10,10 +10,10 @@ const model = defineModel<string>();
     <button
       v-for="category in categories"
       :key="category"
-      @click="model = category"
+      @click="model = category || ''"
       class="category-filter px-4 py-2 rounded-full text-sm transition-colors duration-300"
       :class="
-        model === category
+        (category ? model === category : !model)
           ? 'bg-accent/20 text-text-primary'
           : 'bg-secondary/50 text-text-secondary hover:bg-secondary'
       "
