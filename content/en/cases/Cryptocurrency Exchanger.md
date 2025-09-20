@@ -71,18 +71,15 @@ export interface ClientSocket extends Socket<ServerToClientEvents> {
 
 ## Screenshots
 
-## ::gallery
-
+::gallery
+---
 alts:
-
 - Widget
 - Payment page
 - Advantages
-  images:
+images:
 - /image/cases/dswp/image-1.jpg
 - /image/cases/dswp/image-3.jpg
 - /image/cases/dswp/image-2.jpg
-
 ---
-
 ::

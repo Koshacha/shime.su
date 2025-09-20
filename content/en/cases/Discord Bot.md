@@ -49,33 +49,27 @@ In the course of work I got to know Nest.js and Discord.js better, gained experi
 
 ## Screenshots
 
-## ::gallery
-
+::gallery
+---
 class: columns-1
 alts:
-
 - Guild members rating
-  images:
+images:
 - /image/cases/paimon/rating.gif
-
 ---
-
 ::
 
-## ::gallery
-
+::gallery
+---
 alts:
-
 - Skillcheck
 - Rating output, if we do not have enough messages on server
 - Commands menu
-  images:
+images:
 - /image/cases/paimon/image-2.jpg
 - /image/cases/paimon/image-3.jpg
 - /image/cases/paimon/image-1.jpg
-
 ---
-
 ::
 
 ## Launch the bot using docker compose

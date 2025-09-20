@@ -37,8 +37,8 @@ icons:
 ::gallery
 ---
 alts:
-  - Главная
+- Главная
 images:
-  - /image/cases/novit/noviten-1.jpg
+- /image/cases/novit/noviten-1.jpg
 ---
 ::

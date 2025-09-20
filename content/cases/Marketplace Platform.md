@@ -44,24 +44,21 @@ icons:
 
 ## Скриншоты
 
-## ::gallery
-
+::gallery
+---
 alts:
-
 - Лендинг
 - Список магазинов
 - Страница настроек
 - Детальная страница магазина
 - Лендинг
 - Страница платного продвижения на платформе
-  images:
+images:
 - /image/cases/nvst/image-2.jpg
 - /image/cases/nvst/image-5.jpg
 - /image/cases/nvst/image-1.jpg
 - /image/cases/nvst/image-4.jpg
 - /image/cases/nvst/image-3.jpg
 - /image/cases/nvst/image-6.jpg
-
 ---
-
 ::

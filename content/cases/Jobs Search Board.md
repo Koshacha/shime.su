@@ -44,33 +44,27 @@ icons:
 
 ## Скриншоты
 
-## ::gallery
-
-alts:
-
-- Страница поиска вакансий
-  images:
-- /image/cases/jobs/image-4.jpg
-  class: columns-1
-
+::gallery
 ---
-
+alts:
+- Страница поиска вакансий
+images:
+- /image/cases/jobs/image-4.jpg
+class: columns-1
+---
 ::
 
-## ::gallery
-
+::gallery
+---
 alts:
-
 - Страница "О нас"
 - Главная страница
 - Ввод запроса на главной странице
 - Мобильная
-  images:
+images:
 - /image/cases/jobs/image-1.jpg
 - /image/cases/jobs/image-3.jpg
 - /image/cases/jobs/image-2.jpg
 - /image/cases/jobs/image-5.jpg
-
 ---
-
 ::

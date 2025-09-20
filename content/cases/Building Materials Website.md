@@ -34,33 +34,27 @@ icons:
 
 ## Скриншоты
 
-## ::gallery
-
-alts:
-
-- Хедер на главной
-  images:
-- /image/cases/stroymarket/stroymarket-2.jpg
-  class: columns-1
-
+::gallery
 ---
-
+alts:
+- Хедер на главной
+images:
+- /image/cases/stroymarket/stroymarket-2.jpg
+class: columns-1
+---
 ::
 
-## ::gallery
-
+::gallery
+---
 alts:
-
 - Страница новостей, мобильная
 - Категории в каталоге
 - Категории в каталоге (моб.)
 - Каталог
-  images:
+images:
 - /image/cases/stroymarket/stroymarket-1.jpg
 - /image/cases/stroymarket/stroymarket-3.jpg
 - /image/cases/stroymarket/stroymarket-4.jpg
 - /image/cases/stroymarket/stroymarket-5.jpg
-
 ---
-
 ::

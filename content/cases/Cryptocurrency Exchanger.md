@@ -74,18 +74,15 @@ export interface ClientSocket extends Socket<ServerToClientEvents> {
 
 ## Скриншоты
 
-## ::gallery
-
+::gallery
+---
 alts:
-
 - Компонент для обмена валюты
 - Страница оплаты
 - Раздел преимуществ
-  images:
+images:
 - /image/cases/dswp/image-1.jpg
 - /image/cases/dswp/image-3.jpg
 - /image/cases/dswp/image-2.jpg
-
 ---
-
 ::

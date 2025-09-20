@@ -26,16 +26,13 @@ icons:
 
 ## Screenshots
 
-## ::gallery
-
+::gallery
+---
 alts:
-
 - Main page
 - Cards catalog
-  images:
+images:
 - /image/cases/cards/card-1.jpg
 - /image/cases/cards/card-2.jpg
-
 ---
-
 ::

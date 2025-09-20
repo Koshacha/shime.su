@@ -27,16 +27,13 @@ icons:
 
 ## Скриншоты
 
-## ::gallery
-
+::gallery
+---
 alts:
-
 - Главная
 - Каталог топливных карт
-  images:
+images:
 - /image/cases/cards/card-1.jpg
 - /image/cases/cards/card-2.jpg
-
 ---
-
 ::

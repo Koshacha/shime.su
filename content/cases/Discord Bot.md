@@ -49,33 +49,27 @@ image: /image/purple-thing.jpg
 
 ## Скриншоты
 
-## ::gallery
-
+::gallery
+---
 class: columns-1
 alts:
-
 - Рейтинг участников сервера
-  images:
+images:
 - /image/cases/paimon/rating.gif
-
 ---
-
 ::
 
-## ::gallery
-
+::gallery
+---
 alts:
-
 - Скиллчек
 - Вывод рейтинга, в случае малого количества сообщений
 - Меню команд бота
-  images:
+images:
 - /image/cases/paimon/image-2.jpg
 - /image/cases/paimon/image-3.jpg
 - /image/cases/paimon/image-1.jpg
-
 ---
-
 ::
 
 ## Запуск бота с помощью docker compose
